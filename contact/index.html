@@ -56,6 +56,49 @@
         <h1>Watson's Detective Agency - Contact</h1>
     </div>
 
+     <!-- Begin container for contact form -->
+        
+     <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
+        <h3>Get in touch</h3>
+        <p>Use the form below to let me know a little more about your projects and I'll get back to you.</p>
+        
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/moqyjebk">
+
+            <!-- Begin contact form fields -->
+
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+                </div>
+                <div class="item-email">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+                </div>
+
+                <div class="item-btn">
+                    <button id="btn-submit" type="submit">Send <i class="fas fa-arrow-circle-right"></i></button> 
+                </div>
+            </div>
+
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <!-- End contact form fields -->
+
+        </form>
+        <!-- Contact form ends here -->
+
+    </div>
+    <!-- End container for contact form -->
+
+
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
 		<div>
