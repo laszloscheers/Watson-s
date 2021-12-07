@@ -18,6 +18,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -50,11 +54,6 @@
             </div>
         </div>
     </nav>
-
-    <!--Hero-->
-    <div class="container-hero-cv text-center">
-        <h1>Watson's Detective Agency - Contact</h1>
-    </div>
 
      <!-- Begin container for contact form -->
         
@@ -125,3 +124,16 @@
 	</footer>
 </body>
 </html>
+
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>
+    
+    <!-- End JavaScript code for AOS animate on scroll library -->
