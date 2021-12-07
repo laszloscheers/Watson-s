@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laszlo Scheers CV</title>
+    <title>Watson's Detective Agency - Home</title>
     <!-- Link to bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,14 +12,18 @@
     <!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/website-logo.png" alt="website logo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/website-logo.png" alt="website logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,242 +32,111 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Navigate
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#education">Education</a></li>
-                          <li><a class="dropdown-item" href="#experience">Experience</a></li>
-                          <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                          <li><a class="dropdown-item" href="#footer">Footer</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services/index.html" aria-label="Go to carousel">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cover-letter/index.html" aria-label="Go to carousel">Cover-letter</a>
+                        <a class="nav-link" href="fees/index.html" aria-label="Go to carousel">Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estimated-quote/index.html" aria-label="Go to carousel">Get a quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact/index.html" aria-label="Go to carousel">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex align-items-stretch p-1" accept-charset="utf-8" method="POST" action="https://formspree.io/f/moqyjebk">
-                    <label for="email-address" class="align-self-center">Email:&#160&#160</label>
-                    <input type="email" name="_replyto" id="email-address" placeholder="example@somemail.com" required>
-                    <label for="message" class="align-self-center">&#160&#160&#160Message:&#160&#160</label>
-                    <textarea rows="1" name="message" id="message" placeholder="Message" required></textarea>&nbsp&nbsp
-                    <button class="btn btn-outline-success" type="submit">Submit</button>
-                </form>
             </div>
         </div>
     </nav>
     <!--Hero-->
     <div class="container-hero-cv text-center">
-        <h1>My CV with Bootstrap</h1>
+        <h1>Watson's Detective Agency</h1>
     </div>
     <!--Carousel-->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/example1.png" class="d-block w-100" height="550" alt="Exercises web page">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>IBAT Course Project</h5>
+    <h2>Testimonials</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">		
+            <div class="item active">
+                <div class="img-box"><img src="/assets/img/3.jpg" alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                <p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/example2.png" class="d-block w-100" height="550" alt="Travel agency web page">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Travel Agency Project</h5>
+            <div class="item">
+                <div class="img-box"><img src="/assets/img/1.jpg" alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                <p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/example3.png" class="d-block w-100" height="550"  alt="Analytics web page">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Analytics Project</h5>
-            </div>
-          </div>
+            <div class="item">
+                <div class="img-box"><img src="/assets/img/2.jpg" alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+                <p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                    </ul>
+                </div>
+            </div>		
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>  
 
-    <!-- Main content -->
-    <div class="container">
-
-    <!-- Education -->
-        <div class="container-hero-top text-center" id="education">
-            <h1>Education:</h1>
-        </div>
-        <!--Accordion-->
-        <div class="accordion text-dark" id="accordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Diploma in Web Design (April 2021)
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    The IBAT college diploma in web design is a ten-week learning journey that takes you from the basics of working with HTML5 and CSS3 files to building a personal portfolio website.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    LinkedIn Learning Courses (2020 - 2021)
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ol>
-                        <li>Fundamentals of Programming</li>
-                        <li>Object-Oriented Design</li>
-                        <li>HTML Essential Training</li>
-                        <li>JavaScript Essential Training</li>
-                        <li>Responsive Images</li>
-                        <li>WordPress 5 Essential Training</li>
-                    </ol>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Leaving Certificate in Science (2005)
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ol>
-                        <li>Mathematics</li>
-                        <li>Physics</li>
-                        <li>Chemistry</li>
-                        <li>Technical Drawing</li>
-                        <li>History of Spain</li>
-                        <li>English Language</li>
-                    </ol>
-                </div>
-              </div>
-            </div>
-        </div>
-    <!-- Experience -->
-    <div class="container-hero text-center" id="experience">
-        <h1>Experience:</h1>
-    </div>
-    <div class="row text-dark text-center">
-        <div class="col-lg-3">
-        <div class="card p-3">
-            <div class="card-body">
-            <h5 class="card-title fw-bold">Chef</h5>
-            <p class="card-text">Queen of Tarts, Dublin (August 2017 - March 2020)</p>
-            </div>
-        </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card p-3">
-            <div class="card-body">
-                <h5 class="card-title fw-bold">Chef</h5>
-                <p class="card-text">Acapulco Restaurant, Dublin (October 2016 - Jul 2017)</p>
-            </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card p-3">
-            <div class="card-body">
-                <h5 class="card-title fw-bold">Retail</h5>
-                <p class="card-text">Rincón Verde Shop, Málaga (November 2015 – October 2016)</p>
-            </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card p-3">
-            <div class="card-body">
-                <h5 class="card-title fw-bold">Chef</h5>
-                <p class="card-text">Natura Sur Restaurant, Málaga (May 2012 – October 2015)</p>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skills -->
-        <div class="container-hero text-center" id="skills">
-            <h1>Skills:</h1>
-        </div>
-        <div class="row text-dark text-center m-4">
-            <div class="col-lg-4">
-            <div class="card">
-                <div class="card-body">
-                <h1 class="card-title p-2">HTML</h1>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title p-2">CSS</h1>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title p-2">JavaScript</h1>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-dark text-center m-4">
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-title p-2">Responsive Design</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-title p-2">Visual Studio Code</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-title p-2">WordPress 5</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
 		<div>
 
 			<h4>Site Map</h4>
 			<p><i class="fas fa-arrow-up"></i><a href="#">Top</a></p>
-			<p><i class="fas fa-file-alt fa-fw"></i><a href="cover-letter/index.html">Cover-letter</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Services</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Fees</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Get a quote</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Contact</a></p>
 		
 		</div>
 		<div>
-			<h4>Laszlo Scheers</h4>
-			<p>Front-end Web Developer Student</p>
+			<h4>Watson's Detective Agency</h4>
+			<p>Something troubling you? Trust the world’s second leading detective to sort it out</p>
 		</div>
 		<div>
 			<h4>Contact</h4>
-			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:laszloluque@gmail.com"> Email</a></p>
-            <p><i class="fas fa-file-powerpoint"></i><a href="https://laszloscheers.github.io" target="_blank"> Portfolio</a></p>
-			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/laszloluque.github.io" target="_blank"> GitHub Account</a></p>
-			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/laszloscheers/" target="_blank"> Linkedin</a></p>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watson's@gmail.com"> Email</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
 		</div>
 		
 	</footer>
