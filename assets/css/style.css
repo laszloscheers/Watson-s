@@ -14,6 +14,9 @@ body{
 .carousel{
   background-color: #093C2C;
 }
+.navbar-dark{
+  background-color: #093C2C !important;
+}
 
 .hero{
   background-color: #343a40;
@@ -264,7 +267,7 @@ h4 {
 .container-footer { 
 	display: flex;
 	justify-content: space-between;
-    background-color: #343a40;
+    background-color: #093C2C;
     padding: 3% 8% 3% 8%;
 	margin-top: 3%;
 }
