@@ -11,6 +11,9 @@
     
     <!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	
+	<!-- Link to AOS Animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -54,10 +57,80 @@
 
     <!--Hero-->
     <section class="hero">
-        <div class="container-hero-cv text-center">
+        <div class="container-hero-cv text-center" data-aos="zoom-out">
             <h1>Services</h1>
         </div>
+		
+			<div class="service-description" data-aos="zoom-in">
+		We offer to our clients the best quality and coverage for our services, with guaranteed results.
+    </div>
     </section>
+	
+	<!--Animation Boxes with Service Descriptions-->
+	<div class="row">
+		<div class="aos-services col-lg-5 show" data-aos="fade-right">
+		<h2>Family Matters</h2>
+			<ul class="list">
+				<li class="cross"><b>Have you noticed missing food from the fridge?</b></li>
+				<li class="circle-checkmark">We’ll find out who is the sneaky one.</li>
+				<br>
+				<li class="cross"><b>Your sibling is acting weird?</b></li>
+				<li class="circle-checkmark">We’ll do our best to find what is going on. </li>
+				<br>
+				<li class="cross"><b>Your flatmate is making strange noises in the room?</b></li>
+				<li class="circle-checkmark">We’ll find out if everything that is happening is under legislation.</li>
+				<br>
+				<li class="cross"><b>Your rodent is missing, and the only clue is a piece of cheese?</b></li>
+				<li class="circle-checkmark">We’ll find your companion for you.</li>
+			</ul>
+		</div>
+		
+		<div class="aos-services-img-1 col-lg-5 show" data-aos="fade-left">
+		
+		</div>
+		
+		<div class="aos-services col-lg-5 show" data-aos="fade-up">
+		<h2>Work Issues</h2>
+			<ul class="list">
+				<li class="cross"><b>You are suing your boss for harassment, and you need extra facts for your case?</b></li>
+				<li class="circle-checkmark">We’ll find what he/she is hiding under the carpet.</li>
+				<br>
+				<li class="cross"><b>Your employee looks to tang on the webcam to be living in Ireland?</b></li>
+				<li class="circle-checkmark">Let us find if he/she is sunbathing in a tropical country.</li>
+				<br>
+				<li class="cross"><b>The IT team are always with red eyes, and they blame it to an allergy epidemic?</b></li>
+				<li class="circle-checkmark">We will puff your problems away.</li>
+			</ul>
+		</div>
+		
+		<div class="aos-services-img-2 col-lg-5 show" data-aos="fade-up">
+		
+		</div>
+		
+		<div class="aos-services col-lg-5 show" data-aos="fade-down">
+		<h2>Hacking and Intrussion</h2>
+			<ul class="list">
+				<li class="cross"><b>Being caught on an unprotected network visiting sensible web pages?</b></li>
+				<li class="circle-checkmark">We will catch who is blackmailing you, and we will retrieve whatever sensible information that has been stolen.</li>
+				<br>
+				<li class="cross"><b>You have texted by mistake to your spouse/husband/partner when the message was intended to your affair?</b></li>
+				<li class="circle-checkmark">We will hack and delete any evidence of it.</li>
+				<br>
+				<li class="cross"><b>You think you are being followed?</b></li>
+				<li class="circle-checkmark">Fight fire with fire! Hire us to find it out.</li>
+				<br>
+				<li class="cross"><b>Scared to be traced and caught when checking some cheeky stuff at the office?</b></li>
+				<li class="circle-checkmark">We will save your ass.</li>
+			</ul>
+		</div>
+		
+		<div class="aos-services-img-3 col-lg-5 show" data-aos="fade-up">
+		</div>
+		
+	</div>
+	
+
+	
 
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
@@ -83,5 +156,13 @@
 		</div>
 		
 	</footer>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200,
+		})
+	</script>
+	
 </body>
 </html>
