@@ -1,16 +1,7 @@
 body{
-  background-color:#FFFFFF !important;
+    background-color:#2b2a33;
+	color: #FFFFFF;
 	scroll-behavior: smooth;
-}
-h1{
-  color: #FFFFFF !important;
-}
-.carousel{
-  background-color: #093C2C;
-}
-.hero{
-  background-color: #343a40;
-  min-height:700px;
 }
 /* === HERO BLOCK === */
 .container-hero h1 {
@@ -36,85 +27,126 @@ h1{
 .carousel{
 	margin-top: 7%;
 }
-
-/* Carousel*/
-
-@media (max-width:991.98px) {
-  .padding {
-      padding: 1.5rem
-  }
+/* Footer*/
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+    background-color: #212529;
+    padding: 3% 8% 3% 8%;
+	margin-top: 10%;
+}
+.container-footer h4,
+.container-footer p,
+.container-footer p i,
+.container-footer a {
+   color: #d9edf4
 }
 
-@media (max-width:767.98px) {
-  .padding {
-      padding: 1rem
-  }
-}
+/*Carousel*/
 
-.padding {
-  padding: 5rem
+body {
+	font-family: "Open Sans", sans-serif;
 }
-
-.card {
-  position: relative;
-  display: flex;
-  width: 350px;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid #d2d2dc;
-  border-radius: 11px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
-  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 25px 0 50px;
 }
-
-.card .card-body {
-  padding: 1rem 1rem
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #ffdc12;
+	left: 0;
+	right: 0;
+	bottom: -10px;
 }
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem
+.carousel {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
-
-p {
-  font-size: 0.875rem;
-  margin-bottom: .5rem;
-  line-height: 1.5rem
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
 }
-
-h4 {
-  line-height: .2 !important
+.carousel .item a {
+	color: #eb7245;
 }
-
-.profile {
-  margin-top: 16px;
-  margin-left: 11px
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
 }
-
-.profile-pic {
-  width: 58px
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
 }
-
-.cust-name {
-  font-size: 18px
+.carousel .testimonial {	
+	padding: 30px 0 10px;
 }
-
-.cust-profession {
-  font-size: 10px
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
 }
-
-.items {
-  width: 90%;
-  margin: 0px auto;
-  margin-top: 100px
+.carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
 }
-
-.slick-slide {
-  margin: 10px
+.carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+.carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+	top: 4px;
+}
+.carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control.left {
+	left: auto;
+	right: 40px;
+}
+.carousel-control.right i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
+}
+.carousel-indicators li.active {
+	border: none;
+	background: #888;		
 }
 
 /* =============== BEGIN CONTACT FORM CSS ============= */
@@ -129,7 +161,7 @@ h4 {
 /* Desktop */
 @media all and (min-width:1024px) { 
 	.container-contact-form {
-		margin: 2% 23% 2% 23%;
+		margin: 6% 23% 2% 23%;
 		padding: 2% 4% 1% 4%
 	}
 }
@@ -253,19 +285,4 @@ h4 {
 #contact-form #btn-submit i.fas {
 	margin-left: 9px;
 	font-size: 104%
-}
-
-/* Footer*/
-.container-footer { 
-	display: flex;
-	justify-content: space-between;
-    background-color: #343a40;
-    padding: 3% 8% 3% 8%;
-	margin-top: 3%;
-}
-.container-footer h4,
-.container-footer p,
-.container-footer p i,
-.container-footer a {
-   color: #d9edf4
 }

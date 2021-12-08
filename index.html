@@ -8,15 +8,16 @@
     <!-- Link to bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
+    <!-- Link to local scripts -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </head>
 <body>
@@ -53,69 +54,103 @@
         <h1>Watson's Detective Agency</h1>
     </div>
     <!--Carousel-->
-
-    <h2>Testimonials</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">		
-            <div class="item active">
-                <div class="img-box"><img src="assets/img/3.jpg" alt=""></div>
-                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                <p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
-                <div class="star-rating">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                    </ul>
+    <section class="carousel">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <div class="items">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+                    <div class="template-demo">
+                        <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-10">
+                            <div class="profile">
+                                <h4 class="cust-name">Delbert Simonas</h4>
+                                <p class="cust-profession">Store Owner</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="img-box"><img src="assets/img/1.jpg" alt=""></div>
-                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                <p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
-                <div class="star-rating">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                    </ul>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+                    <div class="template-demo">
+                        <p>When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops i purchased.</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-10">
+                            <div class="profile">
+                                <h4 class="cust-name">Tikoh Amin</h4>
+                                <p class="cust-profession">Salon Owner</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="img-box"><img src="assets/img/2.jpg" alt=""></div>
-                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
-                <p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
-                <div class="star-rating">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-                    </ul>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+                    <div class="template-demo">
+                        <p>I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day using it for college and the battery still has a fair.</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-10">
+                            <div class="profile">
+                                <h4 class="cust-name">Malachi Lensing</h4>
+                                <p class="cust-profession">Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>		
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+                    <div class="template-demo">
+                        <p>This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set up the fingerprint reader.</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-10">
+                            <div class="profile">
+                                <h4 class="cust-name">Christian Isla</h4>
+                                <p class="cust-profession">Android Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+                    <div class="template-demo">
+                        <p>For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade. I own an Apple phone so I decided to look into a computer.</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-10">
+                            <div class="profile">
+                                <h4 class="cust-name">Lori Charles</h4>
+                                <p class="cust-profession">Sales manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
-    </div>  
-
+    </section>
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
 		<div>
