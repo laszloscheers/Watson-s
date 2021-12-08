@@ -1,6 +1,11 @@
 body{
   background-color:#FFFFFF !important;
-	scroll-behavior: smooth;
+  background-image: url("../img/bg-watson.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
 }
 .header{
   color: #343a40;
@@ -17,7 +22,7 @@ body{
 
 .hero{
   background-color: #343a40;
-  min-height:700px;
+  min-height:250px;
 }
 /* === HERO BLOCK === */
 .container-hero h1 {
@@ -273,4 +278,171 @@ h4 {
 .container-footer p i,
 .container-footer a {
    color: #d9edf4
+}
+
+
+/* == Services Page AOS setup == */
+
+* {
+  box-sizing: border-box;
+}
+
+.aos-services {
+  width: 950px;
+  height: 600px;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(36, 33, 35, 0.8);
+  text-align: justify-content;
+  color: #FFF;
+  font-size: 20px;
+  font-family: Lucida Sans Typewriter;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  overflow: hidden;
+  align-items: center;
+}
+
+.aos-services-img-1 {
+  width: 950px;
+  height: 600px;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(36, 33, 35, 0.8);
+  background-image: url("../img/cat-fridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: justify-content;
+  color: #FFF;
+  font-size: 20px;
+  font-family: Lucida Sans Typewriter;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  overflow: hidden;
+  align-items: center;
+}
+
+.aos-services-img-2 {
+  width: 950px;
+  height: 600px;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(36, 33, 35, 0.8);
+  background-image: url("../img/office-spy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: justify-content;
+  color: #FFF;
+  font-size: 20px;
+  font-family: Lucida Sans Typewriter;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  overflow: hidden;
+  align-items: center;
+}
+
+.aos-services-img-3 {
+  width: 950px;
+  height: 600px;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(36, 33, 35, 0.8);
+  background-image: url("../img/cheeky-stuff.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: justify-content;
+  color: #FFF;
+  font-size: 20px;
+  font-family: Lucida Sans Typewriter;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* == List styles for AOS boxes == */
+
+.row{
+	justify-content:space-between;
+}
+
+.service-description{
+	color: #FFF;
+  font-size: 25px;
+  font-family: Lucida Sans Typewriter;
+  text-align: center;
+}
+
+.aos-services h2{
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Lucida Sans Typewriter;
+	font-weight: bold;
+	position: relative;
+	margin: 5px 0 60px;
+}
+
+.aos-services ul {
+  line-height: 1em;
+  margin: 5px 0 0 15px;
+  padding: 0 0 0 0;
+}
+
+.aos-services li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 20px 20px;  
+}
+
+li.circle-checkmark::before {
+  content: ""; 
+  position: absolute; 
+  left: -1.5px; 
+  top: 0; 
+  border: solid 8px #f9dd94;
+  border-radius: 8px;
+}
+
+li.circle-checkmark::after {
+  content: ""; 
+  position: absolute; 
+  left: 5px;
+  top: 5px;
+  width: 3px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+li.cross::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-left: 2px solid #f9dd94;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 5px;
+}
+
+li.cross::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-left: 2px solid #f9dd94;
+  transform: rotate(-45deg);
+  top: 2px;
+  left: 5px;
 }
