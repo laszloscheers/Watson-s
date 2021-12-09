@@ -454,7 +454,7 @@ li.cross::after {
 }
 
 
-/* FEE SHOWCASE STYLE */
+/* FEE SHOWCASE STYLE, PRICING TABLES */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
@@ -561,6 +561,8 @@ li.cross::after {
   font-weight: 600;
   padding: 9px 0; 
 } 
+
+/* == Style for Accordion (Fees Voucher) == */
 
 .accordion-collapse .voucher h4{
  margin: 32px 0;
