@@ -33,7 +33,7 @@ body{
     transition: 0.3s;
 }
 .carousel{
-  background-color: #FFFFFF;
+  background-color: #F8F7F3;
   min-height: 500px;
   display: flex;
   padding-bottom: 5%;
@@ -52,7 +52,7 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 .title2{
-  background-color: #FFFFFF;
+  background-color: #F8F7F3;
 }
 .title2 h1{
   padding: 2.5% 0 0 2%;
@@ -579,7 +579,7 @@ li.cross::after {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #F8F7F3;
   border-style: hidden;
 }
 
