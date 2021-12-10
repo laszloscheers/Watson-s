@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watson's Detective Agency - Home</title>
+
     <!-- Link to bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,17 +13,32 @@
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
+
     <!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Link to local scripts -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
 
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/img/watson.png">
+
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/img/website-logo.png" alt="website logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,25 +66,65 @@
         </div>
     </nav>
 
-
-
     <!--Header section-->
-    <div class="container-md">
-        <div class="row p-4">
-          <div class="col-6 header align-self-center">
-              <h1>Something troubling you? Trust the world’s [second] leading detective in the world to take care of it.</h1><br>
-              <p>Dr. Watson has helped 3,500 clients worldwide to sort out their personal and professional issues, with absolute secrecy. Contrary to what people say, he does NOT need Sherlock, Ok?</p>
-          </div>
-          <div class="col-6"><img src="assets/img/watson.png" alt="My linkedin profile" widtd="400" height="646" data-aos="zoom-in-down" data-aos-duration="1500"></div>
+    <section>
+        <div class="container-flexbox container-header-section-two-columns">
+            <div class="item-2">
+                <h1>Something troubling you? Trust the world’s [second] leading detective in the world to take care of it.</h1>
+                <p>Dr. Watson has helped 3,500 clients worldwide to sort out their personal and professional issues, with absolute secrecy. Contrary to what people say, he does NOT need Sherlock, Ok?</p>
+            </div>
+            <div class="item-2">
+                <img src="assets/img/watson.png" alt="Image of Dr. Watson" width="400" height="600">
+            </div>
+            <div class="container-flexbox item-1 centered scale-up-center">
+            </div>
         </div>
-    </div>
+    </section>
 
     <!--Hero-->
-    <div class="container-hero-cv text-center">
-        <h1>Watson's Detective Agency</h1>
-    </div>
+    <script>AOS.init();</script>
+    <section class="hero">
+        <div class="container text-center" data-aos="zoom-out" data-aos-duration="1500">
+            <h1>Watson's Detective Agency</h1>
+        </div>
+    </section>
+
+    <!--Services-->
+    <section class="dark-bg">
+        <div class="title">
+            <h1>We take care of...</h1>
+        </div>
+
+        <div class="container-flexbox">
+
+            <div class="item-3">
+                    <img src="assets/img/family-matters.png" alt="Image of a family" width="500">
+                    <h3>Family Matters</h3>
+                    <p>Wives, husbands, kids, grandparents, in-laws… nobody escapes Dr. Watson!</p>
+                    <a class="CTA" href="services/index.html">Learn more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+
+            <div class="item-3">
+                <img src="assets/img/techextorsions.png" alt="Image of Dr. Watson" width="500">
+                <h3>Techextorsions</h3>
+                <p>Having trouble with hackers and other tech-savvy wrongdoers? We’ll make sure they byte the dust.</p>
+                <a class="CTA" href="services/index.html">Learn more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+
+            <div class="item-3">
+                <img src="assets/img/professional-affairs.png" alt="Image of a workman" width="500">
+                <h3>Professional Affairs</h3>
+                <p>Let no colleagues make a fool of you, like a certain Holmes did a certain Watson.</p>
+                <a class="CTA" href="services/index.html">Learn more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+    
+        </div>
+    </section>
 
     <!--Carousel-->
+    <div class="title2">
+        <h1>What our clients says</h1>
+    </div>
     <section class="carousel">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -78,15 +134,14 @@
                 <div class="card-body">
                     <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
                     <div class="template-demo">
-                        <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
+                        <p>For years I thought my husband was playing golf after work… Thanks to Watson, I learnt that he lived a second life: he was really spending his time basket-weaving! He had never played golf in his life. I left him, of course. Thank you Mr. Watson for opening my eyes!</p>
                     </div>
-                    <hr>
                     <div class="row">
-                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-2"> <img class="profile-pic" src="assets/img/head2.png"> </div>
                         <div class="col-sm-10">
                             <div class="profile">
-                                <h4 class="cust-name">Delbert Simonas</h4>
-                                <p class="cust-profession">Store Owner</p>
+                                <h4 class="cust-name">Ms. Grantham</h4>
+                                <p class="cust-profession">Cambridge, The UK</p>
                             </div>
                         </div>
                     </div>
@@ -96,15 +151,14 @@
                 <div class="card-body">
                     <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
                     <div class="template-demo">
-                        <p>When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops i purchased.</p>
+                        <p>Dr. Watson ingeniously discovered my next-door neighbour was poisoning my pets. He was convicted and sent to prison, and now I have sixteen beautiful cats. Great service.</p>
                     </div>
-                    <hr>
                     <div class="row">
-                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-2"> <img class="profile-pic" src="assets/img/head1.png"> </div>
                         <div class="col-sm-10">
                             <div class="profile">
-                                <h4 class="cust-name">Tikoh Amin</h4>
-                                <p class="cust-profession">Salon Owner</p>
+                                <h4 class="cust-name">Mr. González</h4>
+                                <p class="cust-profession">Pontevedra, Spain</p>
                             </div>
                         </div>
                     </div>
@@ -116,9 +170,8 @@
                     <div class="template-demo">
                         <p>I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day using it for college and the battery still has a fair.</p>
                     </div>
-                    <hr>
                     <div class="row">
-                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-2"> <img class="profile-pic" src="assets/img/head3.png"> </div>
                         <div class="col-sm-10">
                             <div class="profile">
                                 <h4 class="cust-name">Malachi Lensing</h4>
@@ -132,15 +185,14 @@
                 <div class="card-body">
                     <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
                     <div class="template-demo">
-                        <p>This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set up the fingerprint reader.</p>
+                        <p>When I reached out to Dr. Watson, I was desperate: someone in the office was stealing my lunch every day. He found out it was my blind boss who did it, so I couldn’t do anything about it, really, but still it was good to know. I would definitely trust him again.</p>
                     </div>
-                    <hr>
                     <div class="row">
-                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-2"> <img class="profile-pic" src="assets/img/head4.png"> </div>
                         <div class="col-sm-10">
                             <div class="profile">
-                                <h4 class="cust-name">Christian Isla</h4>
-                                <p class="cust-profession">Android Developer</p>
+                                <h4 class="cust-name">Ms. Hanks</h4>
+                                <p class="cust-profession">Denver, USA</p>
                             </div>
                         </div>
                     </div>
@@ -152,9 +204,8 @@
                     <div class="template-demo">
                         <p>For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade. I own an Apple phone so I decided to look into a computer.</p>
                     </div>
-                    <hr>
                     <div class="row">
-                        <div class="col-sm-2"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                        <div class="col-sm-2"> <img class="profile-pic" src="assets/img/head5.png"> </div>
                         <div class="col-sm-10">
                             <div class="profile">
                                 <h4 class="cust-name">Lori Charles</h4>
@@ -168,8 +219,7 @@
     </section>
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
-		<div>
-
+		<div class="item-3">
 			<h4>Site Map</h4>
 			<p><i class="fas fa-arrow-up"></i><a href="#">Top</a></p>
 			<p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Services</a></p>
@@ -178,11 +228,11 @@
             <p><i class="fas fa-file-alt fa-fw"></i><a href="services/index.html">Contact</a></p>
 		
 		</div>
-		<div>
+		<div class="item-3">
 			<h4>Watson's Detective Agency</h4>
-			<p>Something troubling you? Trust the world’s second leading detective to sort it out</p>
+			<p>Something troubling you? Trust the world’s second leading detective to sort it out.</p>
 		</div>
-		<div>
+		<div class="item-3">
 			<h4>Contact</h4>
 			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watson's@gmail.com"> Email</a></p>
 			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
