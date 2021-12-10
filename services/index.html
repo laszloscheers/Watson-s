@@ -23,13 +23,21 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
     <!-- Link to local scripts -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
-<body>
+<body class="background-image">
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,20 +66,18 @@
     </nav>
 
     <!--Hero-->
-    <section class="hero">
-        <div class="container-hero-cv text-center" data-aos="zoom-out">
+    <script>AOS.init();</script>
+    <section class="hero services">
+        <div class="container text-center font" data-aos="zoom-out" data-aos-duration="1500">
             <h1>Services</h1>
+			<p>Our services include personal and professional affairs.<br>All of Dr. Watson’s services, listed below, are conducted with 100% discretion, results guaranteed.</p>
         </div>
-		
-			<div class="service-description" data-aos="zoom-in">
-		We offer to our clients the best quality and coverage for our services, with guaranteed results.
-    </div>
     </section>
 	
 	<!--Animation Boxes with Service Descriptions-->
 	<div class="row">
-		<div class="aos-services col-lg-5 show" data-aos="fade-right">
-		<h2>Family Matters</h2>
+		<div class="aos-services col-lg-5 show" data-aos="fade-right" id="family">
+			<h2>Family Matters</h2>
 			<ul class="list">
 				<li class="cross"><b>Have you noticed missing food from the fridge?</b></li>
 				<li class="circle-checkmark">We’ll find out who is the sneaky one.</li>
@@ -87,12 +93,19 @@
 			</ul>
 		</div>
 		
-		<div class="aos-services-img-1 col-lg-5 show" data-aos="fade-left">
-		
-		</div>
-		
+		<div class="aos-services-img-1 col-lg-5 show" data-aos="fade-left"></div>
+		<!--Hero-->
+		<section class="hero services hero-services">
+			<div class="container text-center" data-aos="zoom-out" data-aos-duration="1500">
+				<h1>We take care of everyday mysteries and issues at home.</h1>
+				<div class="shrink">
+					<a class="CTA-services" href="../estimated-quote/index.html">Get an estimated quote <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+		</section>
+		<div id="work"></div>
 		<div class="aos-services col-lg-5 show" data-aos="fade-up">
-		<h2>Work Issues</h2>
+			<h2>Professional affairs</h2>
 			<ul class="list">
 				<li class="cross"><b>You are suing your boss for harassment, and you need extra facts for your case?</b></li>
 				<li class="circle-checkmark">We’ll find what he/she is hiding under the carpet.</li>
@@ -104,13 +117,20 @@
 				<li class="circle-checkmark">We will puff your problems away.</li>
 			</ul>
 		</div>
-		
-		<div class="aos-services-img-2 col-lg-5 show" data-aos="fade-up">
-		
-		</div>
-		
+			
+		<div class="aos-services-img-2 col-lg-5 show" data-aos="fade-up"></div>
+		<!--Hero-->
+		<section class="hero services hero-services">
+			<div class="container text-center" data-aos="zoom-out" data-aos-duration="1500">
+				<h1>We leave no stone unturned: we investigate bosses, colleagues, employees, companies, contractors… Are you suing your manager, and you need proof for your case? We’ll find what he/she is hiding under the carpet.</h1>
+				<div class="shrink">
+					<a class="CTA-services" href="../estimated-quote/index.html">Get an estimated quote <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+		</section>
+		<div id="technology"></div>
 		<div class="aos-services col-lg-5 show" data-aos="fade-down">
-		<h2>Hacking and Intrussion</h2>
+			<h2>Techextorsions</h2>
 			<ul class="list">
 				<li class="cross"><b>Being caught on an unprotected network visiting sensible web pages?</b></li>
 				<li class="circle-checkmark">We will catch who is blackmailing you, and we will retrieve whatever sensible information that has been stolen.</li>
@@ -120,13 +140,21 @@
 				<br>
 				<li class="cross"><b>You think you are being followed?</b></li>
 				<li class="circle-checkmark">Fight fire with fire! Hire us to find it out.</li>
-				<br>
 			</ul>
 		</div>
-		
-		<div class="aos-services-img-3 col-lg-5 show" data-aos="fade-up">
-		</div>
-		
+			
+		<div class="aos-services-img-3 col-lg-5 show" data-aos="fade-up"></div>
+
+		<!--Hero-->
+		<section class="hero services hero-services">
+			<div class="container text-center" data-aos="zoom-out" data-aos-duration="1500">
+				<h1>Unfortunately, ransomware attacks are a rapidly growing form of crime. But never fear, Dr Watson is here to help.</h1>
+				<div class="shrink">
+					<a class="CTA-services" href="../estimated-quote/index.html">Get an estimated quote <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+		</section>
+
 	</div>
 	
 
@@ -134,7 +162,7 @@
 
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
-		<div>
+		<div class="item-3">
 
 			<h4>Site Map</h4>
 			<p><i class="fas fa-arrow-up"></i><a href="#">Top</a></p>
@@ -144,11 +172,11 @@
             <p><i class="fas fa-file-alt fa-fw"></i><a href="../contact/index.html">Contact</a></p>
 		
 		</div>
-		<div>
+		<div class="item-3">
 			<h4>Watson's Detective Agency</h4>
 			<p>Something troubling you? Trust the world’s second leading detective to sort it out</p>
 		</div>
-		<div>
+		<div class="item-3">
 			<h4>Contact</h4>
 			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watson's@gmail.com"> Email</a></p>
 			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
