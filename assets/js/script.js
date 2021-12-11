@@ -1,3 +1,4 @@
+//Script for carousel on main page
 $(document).ready(function(){
 
     $('.items').slick({
@@ -36,3 +37,13 @@ $(document).ready(function(){
     ]
     });
     });
+    //script for copy to clipboard on contact page
+    function CopyToClipboard(id)
+    {
+    var r = document.createRange();
+    r.selectNode(document.getElementById(id));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    }
