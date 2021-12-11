@@ -86,7 +86,7 @@ body{
   padding: 2% 3% 3% 3%;
 }
 .hero-services h1{
-  font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+  font-size: calc(35px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
   margin: 3% 0% 7% 0%;
   line-height: normal;
   font-weight: bold;
@@ -120,8 +120,30 @@ body{
   font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
 }
 
+.fees{
+  background-color: #e4e0d7;
+  border-color: #8a5336;
+  flex-shrink: 1;
+}
+
+.fees h3{
+  background-color: #e4e0d7;
+  border-radius: 30px !important;
+  font-family: 'Dancing Script', cursive;
+}
+.fees p{
+  background-color: #e4e0d7;
+  border-radius: 30px !important;
+  font-family: 'Inter', sans-serif;
+  margin: 3% 0% 2% 0% !important;
+  line-height: normal;
+  font-weight: bold;
+  font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
 .hero h1{
   font-size: calc(105px + (80 - 65) * ((100vw - 320px) / (1600 - 320)));
+  margin-top: 25px;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
 }
@@ -203,8 +225,8 @@ body{
 }
 
 .aos-services {
-  width: 950px;
-  height: 600px;
+  max-width: 950px;
+  max-height: 600px;
   margin: 50px auto;
   padding-top: 30px;
   padding-left: 30px;
@@ -240,14 +262,14 @@ body{
 }
 
 .aos-services-img-1 {
-  width: 950px;
-  height: 600px;
+  max-width: 950px;
+  max-height: 600px;
   margin: 50px auto;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   background: rgba(36, 33, 35, 0.8);
-  background-image: url("../img/famyly.png");
+  background-image: url("../img/famyly1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -262,8 +284,8 @@ body{
 }
 
 .aos-services-img-2 {
-  width: 950px;
-  height: 600px;
+  max-width: 950px;
+  max-height: 600px;
   margin: 50px auto;
   padding-top: 30px;
   padding-left: 30px;
@@ -284,13 +306,13 @@ body{
 }
 
 .aos-services-img-3 {
-  width: 950px;
-  height: 600px;
+  max-width: 950px;
+  max-height: 600px;
   margin: 50px auto;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  background: rgba(36, 33, 35, 0.8);
+  
   background-image: url("../img/old-programmers.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -310,6 +332,7 @@ body{
 .row{
 	justify-content:space-between;
 }
+
 
 .service-description{
   margin-top: 15px;
@@ -470,8 +493,8 @@ li.cross::after {
 }
 
 .pricing-table .features .feature {
-  font-weight: 600; }
-
+  font-weight: 600; 
+}
 .pricing-table .features h4 {
   text-align: center;
   font-size: 18px;
