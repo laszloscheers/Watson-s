@@ -29,6 +29,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
 
+    
+	<!--Link to Osano privacy pop-up-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <!-- Link to local scripts -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/script.js"></script>
@@ -70,7 +74,7 @@
         
      <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
         <h3>Contact us</h3>
-        <p>To contact Mr Watson <span class="color">STOP</span> Send an encrypted telegraph <span class="color">STOP</span> With your details <span class="color">STOP</span> And we will contact your <span class="color">STOP</span> Or you can just fill in the form below <span class="color">STOP</span>.</p>
+        <p>To contact Mr Watson <span class="color">STOP</span> Send an encrypted telegram <span class="color">STOP</span> With your details <span class="color">STOP</span> And we will contact your <span class="color">STOP</span> Or you can just fill in the form below <span class="color">STOP</span>.</p>
         
         <!-- Contact form starts here -->
         <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mayvyojj">
@@ -157,20 +161,38 @@
 			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
 			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
 		</div>
-		
 	</footer>
+
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>
+	
+	<!--Script for pop-up message from Osano-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#252e39"
+        },
+        "button": {
+          "background": "#14a7d0"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
+    });
+    </script>
 </body>
 </html>
 
-<!-- Begin JavaScript code for AOS animate on scroll library -->
-<script>
-    AOS.init({
-    disable: function() {
-    var maxWidth = 977;
-    return window.innerWidth < maxWidth;
-    }
-    });
-
-</script>
-
-<!-- End JavaScript code for AOS animate on scroll library -->

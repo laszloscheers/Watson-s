@@ -27,6 +27,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    
+	<!--Link to Osano privacy pop-up-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <!-- Link to local scripts -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
@@ -232,7 +236,26 @@
 			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
 			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
 		</div>
-		
 	</footer>
+
+	<!--Script for pop-up message from Osano-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#252e39"
+        },
+        "button": {
+          "background": "#14a7d0"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "href": "privacy.html"
+      }
+    });
+    </script>
 </body>
 </html>
