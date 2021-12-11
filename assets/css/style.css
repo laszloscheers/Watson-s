@@ -10,6 +10,13 @@ body{
     background-position: center;
     background-size: cover;
 }
+.background-image-about{
+  background-image: url("../img/bg-watson3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .navbar-dark{
   background-color: #8a5336 !important;
 }
@@ -53,6 +60,11 @@ body{
     border-color:#FFFFFF;
     text-decoration: none;
 }
+.shrink:hover,
+.shrink:active { 
+    transform:scale(1.1);
+    transition: 0.3s;
+}
 
 .CTA-contact{
   background-color: #8a5336;
@@ -62,7 +74,7 @@ body{
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
-  margin: 0% 0% 20px 22%;
+  margin: 7% 0% 20px 17%;
   font-family: 'Inter', sans-serif;
 }
 .CTA-contact:hover,
@@ -80,6 +92,38 @@ body{
 }
 .dark-bg{
   background-color: #8a5336 !important;
+}
+.about{
+  margin: 5% 15% 15% 15% !important;
+}
+.hero-about{
+  padding: 1.5% 0% 3.5% 0% !important;
+  color: #343434;
+}
+.hero-about h1{
+  font-size: calc(90px + (105 - 90) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+.about p{
+  font-family: 'Noto Serif', serif !important;
+  font-size: calc(4px + (19 - 4) * ((100vw - 320px) / (1600 - 320))) !important;
+  text-align: left;
+  padding: 0% 5% 0% 5% !important;
+}
+@media all and (max-width: 840px) {
+  .about p {font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
+}
+@media all and (max-width: 482px) {
+  .about p {font-size: calc(17px + (33 - 17) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .about h3{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .hero-about h1{font-size: calc(50px + (65 - 50) * ((100vw - 320px) / (1600 - 320))) !important;}
+}
+
+.about h3{
+  font-family: 'Inter', sans-serif !important;
+  font-size: calc(32px + (47 - 32) * ((100vw - 320px) / (1600 - 320))) !important;
+  padding: 0% 6% 0% 6% !important;
+  margin: 3% 0% 7% 0%!important;
 }
 .hero{
   background-color: #e4e0d7;
@@ -244,12 +288,19 @@ body{
 @media all and (max-width: 991px) {
 	.aos-services, .aos-services-img-1, .aos-services-img-2, .aos-services-img-3{max-width: 700px;}
 }
+
 @media all and (max-width: 776px) {
 	.aos-services, .aos-services-img-1, .aos-services-img-2, .aos-services-img-3{max-width: 500px;}
   .hero p{font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (1600 - 320))) !important}
   .hero-services h1{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important}
   .hero-fees h1{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important}
   .shrink {scale: 0.8;}
+}
+.hero-fees h1{
+  font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+  margin: 3% 0% 7% 0%;
+  line-height: normal;
+  font-weight: bold;
 }
 @media all and (max-width: 558px) {
 	.aos-services, .aos-services-img-1, .aos-services-img-2, .aos-services-img-3{max-width: 300px; min-height: 700px;}
@@ -575,17 +626,17 @@ li.cross::after {
 	font-weight: bold; 
   color: #202124;
 	line-height: 1.1;
-	margin-bottom: 5%;
-  margin-left: 22%;
+	margin-bottom: 6%;
+  margin-left: 18%;
 	font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox.container-header-section-two-columns .item-2 p {  
   color: #343a40;
 	line-height: 1.1;
-	margin-bottom: 5%;
-  margin-left: 22%;
-	font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom: 4%;
+  margin-left: 18%;
+	font-size: calc(5px + (20 - 5) * ((100vw - 320px) / (1600 - 320))); 
   font-family: 'Inter', sans-serif;
 }
 
@@ -594,7 +645,6 @@ li.cross::after {
     margin-left: 9%;
 }
 
-iframe
 .container-flexbox.container-header-section-two-columns .item-1{
     justify-content: center;
 }
@@ -839,7 +889,7 @@ h4 {
 /* Desktop */
 @media all and (min-width:1024px) { 
 	.container-contact-form {
-		margin: 2% 23% 4% 23%;
+		margin: 3% 23% 2% 23%;
 		padding: 2% 4% 1% 4%
 	}
 }
@@ -869,7 +919,7 @@ h4 {
 	font-weight: bold; 
 	color: #343434;
 	line-height: 1.2;
-	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(25px + (60 - 25) * ((100vw - 320px) / (1600 - 320))); 
   font-family: 'Inter', sans-serif;
   margin-bottom: 5%;
 }
@@ -880,8 +930,8 @@ h4 {
     font-weight: normal;
     color: #343434; 
 	line-height: 1.5;
-	margin-bottom: 7%;
-	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320)));
+	margin-bottom: 4%;
+	font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
   font-family: 'Noto Serif', serif;
   font-weight: bold;
 }
