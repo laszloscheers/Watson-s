@@ -156,9 +156,9 @@ body{
 }
 
 .hero h1{
-  font-size: calc(65px + (80 - 65) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(105px + (80 - 65) * ((100vw - 320px) / (1600 - 320)));
   font-weight: bold;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 .font h1{
