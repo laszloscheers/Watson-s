@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
-<body>
+<body class="background-image">
 
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -80,14 +80,12 @@
 
     <!--Hero-->
     <section class="hero fees">
-        <div class="container-hero-cv text-center">
+        <div class="container-hero-cv text-center" data-aos="zoom-out" data-aos-duration="1500">
             <h1>Fees</h1>
+			<p>Nothing is stopping you! We offer great quality-price ratio across all Ireland!<br>Check out our fees and hire now the service you need!</p>
         </div>
-		
 		<div class="service-description">
-		Nothing is stopping you! We offer great quality-price ratio across all Ireland! 
-		<br>
-		Check out our fees and hire now the service you need!
+		
     </div>
 		
     </section>
@@ -106,7 +104,7 @@
 							<div class="heading">
 								<h3>DAILY</h3>
 							</div>
-							<p>Contract per day for the quickest, cleanest jobs ever (better than Agent 47 from Hitman). Instant action!</p>
+							<p>Contract per day for the quickest, cleanest jobs ever (better than Agent 47 from Hitman!)</p>
 							<div class="features">
 								<h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
 								<h4><span class="feature">Price per</span> : <span class="value">1 Day</span></h4>
@@ -317,6 +315,14 @@
 			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
 		</div>
 	</footer>
+	
+	<!--Script for Initialise AOS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200,
+		})
+	</script>
 
 	<!--Script for pop-up message from Osano-->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
