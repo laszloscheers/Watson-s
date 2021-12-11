@@ -134,8 +134,15 @@ body{
   margin: 3% 0% 7% 0%;
   line-height: normal;
   font-weight: bold;
-  font-family: 'Noto Serif', serif !important;
 }
+
+.hero-fees h1{
+  font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+  margin: 3% 0% 7% 0%;
+  line-height: normal;
+  font-weight: bold;
+}
+  
 .services{
   background-color: #e4e0d7;
   border-color: #8a5336;
