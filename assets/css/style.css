@@ -10,6 +10,13 @@ body{
     background-position: center;
     background-size: cover;
 }
+.background-image-about{
+  background-image: url("../img/bg-watson3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .navbar-dark{
   background-color: #8a5336 !important;
 }
@@ -53,6 +60,11 @@ body{
     border-color:#FFFFFF;
     text-decoration: none;
 }
+.shrink:hover,
+.shrink:active { 
+    transform:scale(1.1);
+    transition: 0.3s;
+}
 
 .CTA-contact{
   background-color: #8a5336;
@@ -80,6 +92,38 @@ body{
 }
 .dark-bg{
   background-color: #8a5336 !important;
+}
+.about{
+  margin: 5% 15% 15% 15% !important;
+}
+.hero-about{
+  padding: 4.5% 0% 6.5% 0% !important;
+  color: #343434;
+}
+.hero-about h1{
+  font-size: calc(90px + (105 - 90) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+.about p{
+  font-family: 'Inter', sans-serif !important;
+  font-size: calc(4px + (19 - 4) * ((100vw - 320px) / (1600 - 320))) !important;
+  text-align: left;
+  padding: 0% 7% 0% 7% !important;
+}
+@media all and (max-width: 840px) {
+  .about p {font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
+}
+@media all and (max-width: 482px) {
+  .about p {font-size: calc(17px + (33 - 17) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .about h3{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .hero-about h1{font-size: calc(50px + (65 - 50) * ((100vw - 320px) / (1600 - 320))) !important;}
+}
+
+.about h3{
+  font-family: 'Inter', sans-serif !important;
+  font-size: calc(32px + (47 - 32) * ((100vw - 320px) / (1600 - 320))) !important;
+  padding: 0% 6% 0% 6% !important;
+  margin: 5% 0% 7% 0%!important;
 }
 .hero{
   background-color: #e4e0d7;
