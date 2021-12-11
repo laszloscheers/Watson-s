@@ -131,7 +131,7 @@ body{
   padding: 2% 3% 3% 3%;
 }
 .hero-services h1{
-  font-size: calc(35px + (25 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+  font-size: calc(17px + (27 - 17) * ((100vw - 320px) / (1600 - 320))) !important;
   margin: 3% 0% 7% 0%;
   line-height: normal;
   font-weight: bold;
