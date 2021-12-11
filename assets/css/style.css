@@ -52,6 +52,7 @@ body{
   border-style: solid;
   border-radius: 60px;
   max-width: 300px;
+  font-family: 'Inter', sans-serif;
 }
 .CTA-services:hover,
 .CTA-services:active { 
@@ -134,6 +135,7 @@ body{
   margin: 3% 0% 7% 0%;
   line-height: normal;
   font-weight: bold;
+  font-family: 'Noto Serif', serif!important;
 }
 
 .hero-fees h1{
@@ -392,6 +394,14 @@ body{
   position: relative;
   padding: 0 0 20px 20px;
   font-family: 'Inter', sans-serif; 
+}
+.aos-services li b{
+  padding-left: 2% !important;
+  padding-bottom: 2% !important;
+}
+.circle-checkmark{
+  padding-left: 5% !important;
+  padding-bottom: 2% !important;
 }
 
 li.circle-checkmark::before {
@@ -722,11 +732,25 @@ li.cross::after {
 		padding: 5% 5% 5% 5%;
 
 	}
+  .container-flexbox.container-header-section-two-columns .item-2 p{
+    font-size: calc(15px + (30 - 15) * ((100vw - 320px) / (1600 - 320)));
+  }
   .container-flexbox .item-2 ul li{
       text-align: left;
   }
   .container-flexbox .item-2 h1, .container-flexbox .item-2 p, .container-flexbox .item-2 a{
     margin-left: 0% !important;
+  }
+  .container-flexbox.container-header-section-two-columns .item-2 h1{
+    font-size: calc(45px + (60 - 45) * ((100vw - 320px) / (1600 - 320)));
+  }
+}
+@media all and (max-width:538px) { 
+  .container-flexbox.container-header-section-two-columns .item-2 h1{
+    margin-bottom: 9%;
+  }
+  .item-2{
+    margin-bottom: 20% !important;
   }
 }
 
