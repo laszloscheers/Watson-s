@@ -30,9 +30,49 @@ body{
   font-size: 18px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 60px;
+  border-radius: 7px;
   max-width: 200px;
   font-family: 'Inter', sans-serif;
+}
+.CTA-home{
+  margin: 0% 0 0 2% !important;
+  background-color: #fff;
+  color: #8a5336;
+  border-color:#FFFFFF;
+  max-width: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 28px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 7px;
+  font-family: 'Inter', sans-serif;
+}
+@media all and (max-width: 1199px) {
+  .CTA-home {justify-self: center; width: 300px; margin: 3% 0% 0% 0% !important;}
+  .CTA-home-display{ display: grid !important;}
+  .container-flexbox.container-header-section-two-columns .item-2 img{margin-left: 0% !important;}
+  
+}
+@media all and (max-width: 513px) {
+  .container-flexbox.container-header-section-two-columns .item-2 h1{font-size: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320)));}
+  .container-flexbox.container-header-section-two-columns .item-2 img{transform: scale(0.8);}
+  
+}
+
+.CTA-home:hover,
+.CTA-home:active {
+    color: #202124 !important;
+    border-color:#202124 !important;
+    transform:scale(1.1);
+    transition: 0.3s;
+    text-decoration: none;
+}
+.CTA-home-1{
+  margin-left: 17% !important;
+}
+.CTA-home-display{
+  display: flex;
 }
 
 .CTA:hover,
@@ -319,18 +359,27 @@ body{
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .aos-services-img-2 {
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .aos-services-img-3 {
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
 }
 
 /* == List styles for AOS boxes == */
