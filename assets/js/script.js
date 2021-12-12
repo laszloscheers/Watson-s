@@ -84,32 +84,36 @@ window.getSelection().removeAllRanges();
         totalEavesdropping = eavesdropping.value * ED;
         totalLegal = LA * 150;
         totalHacking= HK * 500;
-        totalPriceUntaxed=totalTracing+totalLegal+totalLegal+totalHacking;
-        totalTaxes=(21*totalPrice/100);
-        console.log(totalTaxes);
-        totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
-   
+
 
         var result_html = document.getElementById('results');
 
         if(TR != 0){
-            result_html.innerHTML += 'Total Tracing: ' + tracing.value + ' * ' + TR + ' = ' + totalTracing + '.<br>';
+            totalPriceUntaxed+=totalTracing;
+            result_html.innerHTML += 'Total Tracing: ' + tracing.value + '€ * ' + TR + ' = ' + totalTracing + '€ <br>';
         }
         if(ED != 0){
-            result_html.innerHTML += 'Total Eavesdropping: ' + eavesdropping.value + ' * ' + ED + ' = ' + totalEavesdropping + '.<br>';
+            totalPriceUntaxed+=totalEavesdropping;
+            result_html.innerHTML += 'Total Eavesdropping: ' + eavesdropping.value + '€ * ' + ED + ' = ' + totalEavesdropping + '€ <br>';
         }
         if(LA != 0){
-            result_html.innerHTML += 'Total Legal Advice: ' + '150' + ' * ' + LA + ' = ' + totalLegal+ '.<br>';
+            totalPriceUntaxed+=totalLegal;
+            result_html.innerHTML += 'Total Legal Advice: ' + '150' + '€ * ' + LA + ' = ' + totalLegal+ '€ <br>';
         }
         if(HK != 0){
-            result_html.innerHTML += 'Total Hackers: ' + '500' + ' * ' + TR + ' = ' + totalHacking + '.<br>';
+            totalPriceUntaxed+=totalHacking;
+            result_html.innerHTML += 'Total Hackers: ' + '500' + '€ * ' + TR + ' = ' + totalHacking + '€ <br>';
         }
 
-        result_html.innerHTML += 'Taxes 21%: ' + ' = ' + totalTaxes + '.<br>';
-        result_html.innerHTML += 'Total: ' + totalPrice + '.';
-        
+        totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
+        totalTaxes= 21*totalPrice/100;
+        console.log(totalTaxes);
+
+		result_html.innerHTML += 'Your total balance is: <br><br>';
+        result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '.<br>';
+        result_html.innerHTML += 'Total: ' + totalPrice + '€<br>';
 
     
     }
     
-    })();    
+    })();   
