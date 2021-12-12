@@ -76,7 +76,6 @@ window.getSelection().removeAllRanges();
             totalEavesdropping,
             totalLegal,
             totalHacking,
-            taxes,
             totalPrice,
             totalTaxes,
             totalPriceUntaxed;
@@ -86,9 +85,9 @@ window.getSelection().removeAllRanges();
         totalLegal = LA * 150;
         totalHacking= HK * 500;
         totalPriceUntaxed=totalTracing+totalLegal+totalLegal+totalHacking;
-        taxes= 21,
-        totalTaxes=taxes*totalPrice/100;
-        totalPrice=totalPriceUntaxed-(taxes*totalPriceUntaxed/100);
+        totalTaxes=(21*totalPrice/100);
+        console.log(totalTaxes);
+        totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
    
 
         var result_html = document.getElementById('results');
