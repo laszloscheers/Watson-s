@@ -67,12 +67,54 @@
         </div>
     </nav> 
 
-    <!--Hero-->
-    <section class="hero">
-        <div class="container-hero-cv text-center">
-            <h1>Get a Quote</h1>
+	
+	<!-- Begin container for contact form -->
+        
+     <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
+        <section class="hero">
+			<div class="container-hero-cv text-center">
+				<h1>Get a Quote</h1>
+			</div>
+		</section>
+        
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mayvyojj">
+
+        <!-- CALCULATOR -->
+		
+		<div class="flex-row">
+            <div class="item-name">
+                <label for="full-name">Number 1</label>
+                <input type="text" name="name" id="num1" placeholder="Enter 1st number" required>
+            </div>
+            <div class="item-email">
+                <label for="email-address">Number 2</label>
+                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
+            </div>
+			
+			<div class="item-btn">
+            <button id="btn-submit" onclick="calculate() ">Calculate<i class="fas fa-arrow-circle-right"></i></button> 
         </div>
-    </section>
+		
+        </div>
+		
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Final Answer</label>
+                    <textarea rows="3" name="message" id="answer" placeholder="Answer to calculation" required></textarea>
+                </div>
+            </div>
+
+        <!-- End contact calculator fields -->
+
+        </form>
+        <!-- Contact form ends here -->
+
+    </div>
+    <!-- End container for contact form -->
+	
+	
+	
 	<!-- Footer -->
 	<footer class="container-footer" id="footer">
 		<div class="item-3">
@@ -117,6 +159,18 @@
         "href": "../privacy.html"
       }
     });
+	
+	    function calculate(){
+                var field1=document.getElementById("num1").value;
+                var field2=document.getElementById("num2").value;
+
+                var result=parseFloat(field1)+parseFloat(field2);
+
+                if(!isNaN(result)){
+
+                    document.getElementById("answer").innerHTML="The answer is " + result;
+                }
+            }
     </script>
 </body>
 </html>
