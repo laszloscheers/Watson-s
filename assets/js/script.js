@@ -51,11 +51,6 @@ window.getSelection().removeAllRanges();
 
 //Script for calculator
 (function() {
-    "use strict";
-    
-    var tracing = document.getElementById("tracing");
-    var eavesdropping = document.getElementById("eavesdropping");
-    
     document.addEventListener('DOMContentLoaded', function(){
     
         document.getElementById('cart_custom').addEventListener('submit', estimateTotal);
@@ -64,64 +59,56 @@ window.getSelection().removeAllRanges();
 
     function estimateTotal(event) {
         event.preventDefault();
-        
-    
-        var TR = parseInt(document.getElementById("tracing-q").value, 10 )|| 0;
-        var ED = parseInt(document.getElementById("eavesdropping-q").value, 10 )|| 0;
-        var LA = parseInt(document.getElementById("legal-advice-q").value, 10 )|| 0;
-        var HK = parseInt(document.getElementById("hacking-q").value, 10 )|| 0;
+
+        var eavesdropping = document.getElementById("eavesdropping");
+        var tracing = document.getElementById("tracing");
+        var TR = parseInt(document.getElementById("tracing-q").value);
+        var ED = parseInt(document.getElementById("eavesdropping-q").value);
+        var LA = parseInt(document.getElementById("legal-advice-q").value,);
+        var HK = parseInt(document.getElementById("hacking-q").value);
         
         console.log(TR);
         console.log(ED);
         console.log(LA);
-    
-        var state_index = state.value;
+        console.log(HK);
         
-        var totalItemPrice, 
-            estimate,
-            totalTracing,
+        var totalTracing,
             totalEavesdropping,
             totalLegal,
             totalHacking,
-            taxes;
-        
-        var t_quantity = sneakers + jersey + supple + water;
+            taxes,
+            totalPrice,
+            totalTaxes,
+            totalPriceUntaxed;
 
-        totalTracing = tracing * TR;
-        totalEavesdropping = eavesdropping * ED;
+        totalTracing = tracing.value * TR;
+        totalEavesdropping = eavesdropping.value * ED;
         totalLegal = LA * 150;
         totalHacking= HK * 500;
-        taxes= 21;
+        totalPriceUntaxed=totalTracing+totalLegal+totalLegal+totalHacking;
+        taxes= 21,
+        totalTaxes=taxes*totalPrice/100;
+        totalPrice=totalPriceUntaxed-(taxes*totalPriceUntaxed/100);
+   
 
         var result_html = document.getElementById('results');
 
         if(TR != 0){
-            result_html.innerHTML = 'Total Tracing: ' + tracing + ' * ' + TR + ' = ' + totalTracing + '.';
+            result_html.innerHTML += 'Total Tracing: ' + tracing.value + ' * ' + TR + ' = ' + totalTracing + '.<br>';
         }
         if(ED != 0){
-            result_html.innerHTML = 'Total Eavesdropping: ' + eavesdropping + ' * ' + ED + ' = ' + totalEavesdropping + '.';
+            result_html.innerHTML += 'Total Eavesdropping: ' + eavesdropping.value + ' * ' + ED + ' = ' + totalEavesdropping + '.<br>';
         }
         if(LA != 0){
-            result_html.innerHTML = 'Total Tracing: ' + tracing + ' * ' + LA + ' = ' + totalLegal+ '.';
+            result_html.innerHTML += 'Total Legal Advice: ' + '150' + ' * ' + LA + ' = ' + totalLegal+ '.<br>';
         }
         if(HK != 0){
-            result_html.innerHTML = 'Total Tracing: ' + tracing + ' * ' + TR + ' = ' + totalTracing + '.';
+            result_html.innerHTML += 'Total Hackers: ' + '500' + ' * ' + TR + ' = ' + totalHacking + '.<br>';
         }
 
-
-        totalShippingCost = shippingCostPer * t_quantity;
+        result_html.innerHTML += 'Taxes 21%: ' + ' = ' + totalTaxes + '.<br>';
+        result_html.innerHTML += 'Total: ' + totalPrice + '.';
         
-        estimate = '$' +((totalItemPrice * taxFactor ) + totalShippingCost).toFixed(2);
-        
-        document.getElementById('total_estimate').value=estimate;
-    
-
-    
-        result_html.innerHTML = 'Total Item: ' + t_quantity + '<br>';
-        result_html.innerHTML +='Total Shipping: $' + totalShippingCost.toFixed(2) + '<br>';
-        result_html.innerHTML +='Tax:' + (( taxFactor - 1 )*100).toFixed(2) + '%';
-        
-        result_html.innerHTML +='(State:'  + state_index + ')';
 
     
     }

@@ -40,6 +40,7 @@
 
     <!-- Link to local scripts -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js"></script>
 
 </head>
 <body>
@@ -87,7 +88,7 @@
 		</section>
         
         <!-- Contact form starts here -->
-        <form id="contact-form" name="contact-form" accept-charset="utf-8">
+        <div id="contact-form" accept-charset="utf-8">
 
         <!-- CALCULATOR -->
 		
@@ -110,7 +111,8 @@
                         <div class="group col3 method">
         
                             <label>Select Contract:</label><br>
-                            <select id="tracing" name="state" required>
+                            <select id="tracing" name="tracing">
+                                <option value="0" selected="selected"></option>
                                 <option value="500">500€/day (24 hours)</option>
                                 <option value="2800">2800€/week (7 days)</option>
                                 <option value="8400">8400€/month (30 days)</option>
@@ -135,9 +137,10 @@
                         <div class="group col3 method">
         
                             <label>Select value:</label><br>
-                            <select id="eavesdropping" name="state" required>
-                                <option value="IL">80€ (1 hour)</option>
-                                <option value="NH">300€ (5 hour)</option>
+                            <select id="eavesdropping" name="eavesdropping">
+                                <option value="0" selected="selected"></option>
+                                <option value="80">80€ (1 hour)</option>
+                                <option value="300">300€ (5 hour)</option>
                             </select>
                             
                         </div>
@@ -188,20 +191,21 @@
                         </div>
                         
                     </div>
-                    <div class="row">
-                        <div class="item-btn">
-                            <button id="btn_estimate" value="Estimate Total" type="submit">Calculate <i class="fas fa-arrow-circle-right"></i></button> 
-                        </div>
-                    </div>
-
-                    <div class="group col2 calc">
-                        <div id="results">
-                            
-                        </div>
-                    </div>
 
                 </fieldset>
-        
+
+                <div class="row">
+                    <div class="item-btn">
+                        <button class="btn-about" id="submit" value="Estimate Total" type="submit">Calculate <i class="fas fa-arrow-circle-right"></i></button> 
+                    </div>
+                </div>
+
+                <div class="group col2 calc">
+                    <div id="results">
+                        
+                    </div>
+                </div>
+
             </form>
             </div>
             
@@ -210,7 +214,7 @@
 
         <!-- End contact calculator fields -->
 
-        </form>
+    </div>
         <!-- Contact form ends here -->
 
     </div>

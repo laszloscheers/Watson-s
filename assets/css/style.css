@@ -962,6 +962,24 @@ h4 {
 .slick-slide {
   margin: 10px
 }
+.btn-about{
+	float: right; 
+    background-color: #8a5336;
+    color: #fff;
+	  font-weight: bold;
+    padding: 18px 28px;
+    font-size: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px
+}
+.btn-about:hover,
+.btn-about:active{
+  background-color: #212529;
+  color: #fff;
+  transform:scale(1.1);
+  transition: 1s;
+}
 
 /******************************************************************************
 STYLE FOR CALCULATOR
