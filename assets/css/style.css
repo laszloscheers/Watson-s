@@ -34,7 +34,6 @@ body{
   max-width: 200px;
   font-family: 'Inter', sans-serif;
 }
-<<<<<<< Updated upstream
 .CTA-home{
   margin: 0% 0 0 2% !important;
   background-color: #fff;
@@ -75,8 +74,6 @@ body{
 .CTA-home-display{
   display: flex;
 }
-=======
->>>>>>> Stashed changes
 
 .CTA:hover,
 .CTA:active { 
