@@ -22,9 +22,9 @@ body{
   background-color: #8a5336 !important;
 }
 .CTA{
-  margin: 2% 0 0 14%;
-  background-color: #e4e0d7;
-  color: #fff;
+  margin: 0.5% 0 0 14%;
+  background-color: #fff;
+  color: #8a5336 !important;
   font-weight: bold;
   padding: 18px 28px;
   font-size: 18px;
@@ -55,8 +55,9 @@ body{
   
 }
 @media all and (max-width: 513px) {
-  .container-flexbox.container-header-section-two-columns .item-2 h1{font-size: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320)));}
+  .container-flexbox.container-header-section-two-columns .item-2 h1{font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1600 - 320)));}
   .container-flexbox.container-header-section-two-columns .item-2 img{transform: scale(0.8);}
+  .container-flexbox.container-header-section-two-columns .item-2 p{font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1600 - 320))) !important;}
   
 }
 
@@ -77,9 +78,9 @@ body{
 
 .CTA:hover,
 .CTA:active { 
-    background-color: #fff;
-    color: #8a5336 !important;
-    border-color:#FFFFFF;
+    background-color: #e4e0d7;
+    color: #202124 !important;
+    border-color:#202124;
     transform:scale(1.1);
     transition: 0.3s;
     text-decoration: none;
@@ -91,7 +92,7 @@ body{
   padding: 18px 28px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 60px;
+  border-radius: 7px;
   max-width: 300px;
   font-family: 'Inter', sans-serif;
 }
@@ -245,7 +246,7 @@ body{
   background-color: #e4e0d7;
 }
 .title2 h1{
-  padding: 3% 0 1% 0%;
+  padding: 2.5% 0 0.5% 0%;
   font-size: calc(85px + (100 - 85) * ((100vw - 320px) / (1600 - 320)));
   font-weight: bold;
   text-align: center;
@@ -253,7 +254,7 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 .title h1{
-  padding: 3% 0 3% 0%;
+  padding: 1.5% 0 1.5% 0%;
   font-size: calc(85px + (100 - 85) * ((100vw - 320px) / (1600 - 320)));
   font-weight: bold;
   text-align: center;
@@ -700,7 +701,7 @@ li.cross::after {
 
 .container-flexbox .item-2 h3,
 .container-flexbox .item-3 h3 {
-  line-height: 1.6; margin-bottom: 12px; margin-left: 14%;
+  line-height: 1.6; margin-left: 14%;
 }
 
 /* Centre-align text withn two, three and four columns on mobiles */
@@ -861,6 +862,10 @@ li.cross::after {
   background-color: #e4e0d7;
   border-style: hidden;
   font-family: 'Inter', sans-serif;
+}
+
+.card p{
+  font-size: 0.9rem;
 }
 
 .card .card-body {

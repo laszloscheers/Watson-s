@@ -37,6 +37,7 @@ $(document).ready(function(){
     ]
     });
     });
+    
     //script for copy to clipboard on contact page
     function CopyToClipboard(id)
     {
