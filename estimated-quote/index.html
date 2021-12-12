@@ -25,7 +25,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
 
-    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8B1C21TP39"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-8B1C21TP39');
+	</script>
+	
 	<!--Link to Osano privacy pop-up-->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
@@ -82,28 +91,29 @@
 
         <!-- CALCULATOR -->
 		
-		<div class="flex-row">
+		<div class="flex-row quote">
             <div class="item-name">
-                <label for="full-name">Number 1</label>
+                <label for="full-name">Tracing</label>
                 <input type="text" name="name" id="num1" placeholder="Enter 1st number" required>
             </div>
             <div class="item-email">
-                <label for="email-address">Number 2</label>
+                <label for="email-address">Evesdropping Detection</label>
+                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
+            </div>
+            <div class="item-email">
+                <label for="email-address">Legal Advice</label>
+                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
+            </div>
+            <div class="item-email">
+                <label for="email-address">Hackers</label>
                 <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
             </div>
 			
 			<div class="item-btn">
             <button id="btn-submit" onclick="calculate() ">Calculate<i class="fas fa-arrow-circle-right"></i></button> 
-        </div>
-		
-        </div>
-		
-            <div class="flex-row">
-                <div class="item-textarea">
-                    <label for="message">Final Answer</label>
-                    <textarea rows="3" name="message" id="answer" placeholder="Answer to calculation" required></textarea>
-                </div>
             </div>
+        </div>
+
 
         <!-- End contact calculator fields -->
 
@@ -134,7 +144,7 @@
 		</div>
 		<div class="item-3">
 			<h4>Contact</h4>
-			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watson's@gmail.com"> Email</a></p>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watsonsdetectiveagency@gmail.com"> Email</a></p>
             <p><i class="fas fa-phone-square-alt fa-fw"></i><a href="tel:01899597648"> Phone Number: 01899597648</a></p>
 			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Proyect</a></p>
 			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
