@@ -170,7 +170,7 @@ body{
 }
 .hero{
   background-color: #e4e0d7;
-  padding: 2% 3% 3% 3%;
+  padding: 0.2% 3% 3% 3%;
 }
 .hero-services h1{
   font-size: calc(17px + (27 - 17) * ((100vw - 320px) / (1600 - 320))) !important;
@@ -239,7 +239,7 @@ body{
 .font h1{
   font-family: 'Dancing Script', cursive;
   font-size: calc(105px + (120 - 105) * ((100vw - 320px) / (1600 - 320)));
-  margin: 3% 0% 0% 0%;
+  margin: 1% 0% 0% 0%;
 }
 
 .title2{
@@ -316,9 +316,10 @@ body{
   max-width: 600px;
   max-height: 600px;
   margin: 50px auto;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 50px;
   background: rgba(228, 224, 215, 0.8);
   text-align: justify-content;
   color: black;
@@ -346,7 +347,7 @@ body{
   line-height: normal;
   font-weight: bold;
 }
-@media all and (max-width: 558px) {
+@media all and (max-width: 624px) {
 	.aos-services, .aos-services-img-1, .aos-services-img-2, .aos-services-img-3{max-width: 300px; min-height: 700px;}
   .aos-services h2{font-size: calc(30px + (45 - 30) * ((100vw - 320px) / (1600 - 320)));}
   .aos-services li{font-size: calc(13px + (26 - 13) * ((100vw - 320px) / (1600 - 320)));}
@@ -354,33 +355,33 @@ body{
   .aos-services li {padding: 0% 0% 7% 12% !important;}
   .services p{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important; margin: 5% 1% 8% 1% !important;}
   .shrink {scale: 0.68;}
+  .aos-init-img{ transform: scale(0.8) !important;}
+  .aos-services ul{margin: 0% !important;}
+}
+@media all and (max-width: 454px) {
+  .aos-init-img{ transform: scale(0.6) !important;;}
+}
+.aos-init-img{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aos-services-img-1 {
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
 }
 
 .aos-services-img-2 {
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
 }
 
 .aos-services-img-3 {
   max-width: 950px;
   max-height: 600px;
   margin: 50px auto;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
 }
 
 /* == List styles for AOS boxes == */
@@ -423,6 +424,7 @@ body{
   padding: 0 0 20px 20px;
   font-family: 'Noto Serif', serif; 
   color: #343434;
+  text-align: left;
 }
 .aos-services li b{
   padding-left: 2% !important;
