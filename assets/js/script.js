@@ -84,6 +84,8 @@ window.getSelection().removeAllRanges();
         totalEavesdropping = eavesdropping.value * ED;
         totalLegal = LA * 150;
         totalHacking= HK * 500;
+        totalPriceUntaxed=0;
+        totalPrice=0;
 
 
         var result_html = document.getElementById('results');
@@ -107,7 +109,7 @@ window.getSelection().removeAllRanges();
 
         totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
         totalTaxes= 21*totalPrice/100;
-        console.log(totalTaxes);
+        console.log(totalPriceUntaxed);
 
 		result_html.innerHTML += 'Your total balance is: <br><br>';
         result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '.<br>';
