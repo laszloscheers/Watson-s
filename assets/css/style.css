@@ -1296,3 +1296,18 @@ input[type="submit" i]:disabled{
 }
 
 /* == End footer CSS == */
+
+
+/* == Results Get a Quote == */
+
+#results{
+	font-family: 'Inter', sans-serif;
+	font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+	
+}
+
+/* == End Results Get a Quote == */
