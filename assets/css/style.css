@@ -30,10 +30,11 @@ body{
   font-size: 18px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 7px;
+  border-radius: 60px;
   max-width: 200px;
   font-family: 'Inter', sans-serif;
 }
+<<<<<<< Updated upstream
 .CTA-home{
   margin: 0% 0 0 2% !important;
   background-color: #fff;
@@ -74,6 +75,8 @@ body{
 .CTA-home-display{
   display: flex;
 }
+=======
+>>>>>>> Stashed changes
 
 .CTA:hover,
 .CTA:active { 
@@ -539,7 +542,7 @@ li.cross::after {
   margin-bottom: 30px; 
 }
 
-.pricing-table .item button {
+.pricing-table .item .btn {
   font-weight: 600; 
   border-width: 2px;
   border-radius: 60px;
@@ -547,13 +550,15 @@ li.cross::after {
   border-color: #358953;
 }
 
-.pricing-table .item button:hover {
+.pricing-table .item .btn:hover {
   font-weight: 600; 
   border-width: 2px;
   border-radius: 60px;
   background-color: #358953;
   border-color: #8a5335;
 }
+
+
 
 .pricing-table .ribbon {
   width: 160px;
@@ -611,13 +616,41 @@ li.cross::after {
 
 /* == Style for Accordion (Fees Voucher) == */
 
+/* VOUCHER CODE FONT */ 
 .accordion-collapse .voucher h4{
   margin: 32px 0;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
-  color: #2288f9; 	
+  color: #8a5335;
   font-weight: bold;
-	
+}
+
+.accordion-collapse .voucher{
+  min-height: 40px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #e2e2e2;
+    background-color: #358953;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: left;
+    background-color: #8a5336;
+    border: 2px;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
 }
 
 /* ======= HEADER SECTION, FLEXBOX TWO COLUMNS ===== */
