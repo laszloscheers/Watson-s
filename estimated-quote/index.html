@@ -79,7 +79,7 @@
 	
 	<!-- Begin container for contact form -->
         
-     <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
+     <div class="container-contact-form quote" data-aos="zoom-in-down" data-aos-duration="700">
         <section class="hero">
 			<div class="container-hero-cv text-center">
 				<h1>Get a Quote</h1>
@@ -87,31 +87,124 @@
 		</section>
         
         <!-- Contact form starts here -->
-        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mayvyojj">
+        <form id="contact-form" name="contact-form" accept-charset="utf-8">
 
         <!-- CALCULATOR -->
 		
-		<div class="flex-row quote">
-            <div class="item-name">
-                <label for="full-name">Tracing</label>
-                <input type="text" name="name" id="num1" placeholder="Enter 1st number" required>
+        <div id="canvas" class="container group">
+    
+            <div id="primaryContent" class="group">
+        
+            <form class="cart" id="cart_custom">
+                <fieldset id="product-summary">
+                    <h2>Choose your desired services:</h2>
+                    
+                    <!--TRACING-->
+                    
+                    <div class="row">
+                        <div class="group col3 state">
+                            <label for="state">Tracing Job:</label>
+
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label>Select Contract:</label><br>
+                            <select id="tracing" name="state" required>
+                                <option value="500">500€/day (24 hours)</option>
+                                <option value="2800">2800€/week (7 days)</option>
+                                <option value="8400">8400€/month (30 days)</option>
+                            </select>
+        
+                        </div>
+                        
+                        <div class="order">
+                                <label for="tracing-q">Quantity desired: </label>
+                                <input type="number" name="tracing-qs" id="tracing-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                                          
+                    </div>
+                    
+                    <!--EAVESDROPPING-->
+                    
+                    <div class="row">
+                        <div class="group col3 state">
+                            <label for="state">Legal Advice:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label>Select value:</label><br>
+                            <select id="eavesdropping" name="state" required>
+                                <option value="IL">80€ (1 hour)</option>
+                                <option value="NH">300€ (5 hour)</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div class="order">
+                                <label for="eavesdropping-q">Quantity desired: </label>
+                                <input type="number" name="eavesdropping-q" id="eavesdropping-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                    
+                    </div>
+                    
+                    <!--LEGAL ADVICE-->
+                    
+                    <div class="row">
+                        <div class="group col3 state">
+                            <label for="state">Solicitors and Lawyers:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label>150€ (1 hour)</label><br>
+        
+                        </div>
+                        
+                        <div class="order">
+                                <label for="legal-advice-q">Quantity desired: </label>
+                                <input type="number" name="legal-advice-q" id="legal-advice-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+            
+                    </div>
+                    
+                    <!--Hacking Solutions-->
+                    
+                    <div class="row">
+                        <div class="group col3 state">
+                            <label for="state">Hacking Solutions:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label>500€ (1 hour)</label><br>
+                            
+                        </div>
+                        
+                        <div class="order">
+                                <label for="hacking-q">Quantity desired: </label>
+                                <input type="number" name="hacking-q" id="hacking-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="item-btn">
+                            <button id="btn_estimate" value="Estimate Total" type="submit">Calculate <i class="fas fa-arrow-circle-right"></i></button> 
+                        </div>
+                    </div>
+
+                    <div class="group col2 calc">
+                        <div id="results">
+                            
+                        </div>
+                    </div>
+
+                </fieldset>
+        
+            </form>
             </div>
-            <div class="item-email">
-                <label for="email-address">Evesdropping Detection</label>
-                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
-            </div>
-            <div class="item-email">
-                <label for="email-address">Legal Advice</label>
-                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
-            </div>
-            <div class="item-email">
-                <label for="email-address">Hackers</label>
-                <input type="email" name="_replyto" id="num2" placeholder="Enter 2nd number" required>
-            </div>
-			
-			<div class="item-btn">
-            <button id="btn-submit" onclick="calculate() ">Calculate<i class="fas fa-arrow-circle-right"></i></button> 
-            </div>
+            
         </div>
 
 
