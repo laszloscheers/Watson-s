@@ -91,19 +91,19 @@ window.getSelection().removeAllRanges();
         var result_html = document.getElementById('results');
 
         if(TR != 0){
-            totalPriceUntaxed+=totalTracing;
+            totalPriceUntaxed += totalTracing;
             result_html.innerHTML += 'Total Tracing: ' + tracing.value + '€ * ' + TR + ' = ' + totalTracing + '€ <br>';
         }
         if(ED != 0){
-            totalPriceUntaxed+=totalEavesdropping;
+            totalPriceUntaxed += totalEavesdropping;
             result_html.innerHTML += 'Total Eavesdropping: ' + eavesdropping.value + '€ * ' + ED + ' = ' + totalEavesdropping + '€ <br>';
         }
         if(LA != 0){
-            totalPriceUntaxed+=totalLegal;
+            totalPriceUntaxed += totalLegal;
             result_html.innerHTML += 'Total Legal Advice: ' + '150' + '€ * ' + LA + ' = ' + totalLegal+ '€ <br>';
         }
         if(HK != 0){
-            totalPriceUntaxed+=totalHacking;
+            totalPriceUntaxed += totalHacking;
             result_html.innerHTML += 'Total Hackers: ' + '500' + '€ * ' + TR + ' = ' + totalHacking + '€ <br>';
         }
 
@@ -112,8 +112,8 @@ window.getSelection().removeAllRanges();
         console.log(totalPriceUntaxed);
 
 		result_html.innerHTML += 'Your total balance is: <br><br>';
-        result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '.<br>';
-        result_html.innerHTML += 'Total: ' + totalPrice + '€<br>';
+        result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '€<br>';
+        result_html.innerHTML += 'Total: ' + (totalPriceUntaxed + totalTaxes) + '€<br>';
 
     
     }
