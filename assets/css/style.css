@@ -984,19 +984,19 @@ h4 {
 /******************************************************************************
 STYLE FOR CALCULATOR
 ******************************************************************************/
-.row {
+.row-quote {
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction: row;
 	margin:25px 0;
 }
-.row div{
+.row-quote div{
   width: unset !important;
 }
-.row .item{
+.row-quote .item{
 	flex:0 0 47%;
 }
-.row .col3{
+.row-quote .col3{
 	flex: 0 0 33%;
 }
 
@@ -1004,7 +1004,7 @@ h2{
 	margin-top:25px;
 }
 
-.row .col2{
+.row-quote .col2{
 	flex: 0 0 50%;
 }
 
