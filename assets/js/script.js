@@ -72,10 +72,10 @@ window.getSelection().removeAllRanges();
         var LA = parseInt(document.getElementById("legal-advice-q").value,);
         var HK = parseInt(document.getElementById("hacking-q").value);
         
-        console.log(TR);
-        console.log(ED);
-        console.log(LA);
-        console.log(HK);
+        //console.log(TR);
+        //console.log(ED);
+        //console.log(LA);
+        //console.log(HK);
         
         var totalTracing,
             totalEavesdropping,
@@ -112,8 +112,8 @@ window.getSelection().removeAllRanges();
             result_html.innerHTML += 'Total Hacking Solutions: ' + '500' + '€ * ' + HK + ' = ' + totalHacking + '€ <br>';
         }
 
-        totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
-        totalTaxes= 21*totalPrice/100;
+        totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
+        totalTaxes= 21*totalPriceUntaxed/100;
         console.log(totalPriceUntaxed);
 
 		
