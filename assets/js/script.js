@@ -72,10 +72,10 @@ window.getSelection().removeAllRanges();
         var LA = parseInt(document.getElementById("legal-advice-q").value,);
         var HK = parseInt(document.getElementById("hacking-q").value);
         
-        console.log(TR);
-        console.log(ED);
-        console.log(LA);
-        console.log(HK);
+        //console.log(TR);
+        //console.log(ED);
+        //console.log(LA);
+        //console.log(HK);
         
         var totalTracing,
             totalEavesdropping,
@@ -119,8 +119,6 @@ window.getSelection().removeAllRanges();
 		result_html.innerHTML += '<br>Your total balance is: <br><br>';
         result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '€<br>';
         result_html.innerHTML += 'Total: ' + (totalPriceUntaxed + totalTaxes) + '€<br>';
-
-		disableButton();
 		
     }
     
