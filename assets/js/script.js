@@ -107,8 +107,8 @@ window.getSelection().removeAllRanges();
             result_html.innerHTML += 'Total Hackers: ' + '500' + '€ * ' + TR + ' = ' + totalHacking + '€ <br>';
         }
 
-        totalPrice=totalPriceUntaxed-(21*totalPriceUntaxed/100);
-        totalTaxes= 21*totalPrice/100;
+        totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
+        totalTaxes= 21*totalPriceUntaxed/100;
         console.log(totalPriceUntaxed);
 
 		result_html.innerHTML += 'Your total balance is: <br><br>';
