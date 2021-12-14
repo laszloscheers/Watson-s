@@ -110,7 +110,7 @@
         
                         <div class="group col3 method">
         
-                            <label>Select Contract:</label><br>
+                            <label class="options">Select a fee:</label>
                             <select id="tracing" name="tracing">
                                 <option value="0" selected="selected"></option>
                                 <option value="500">500€/day (24 hours)</option>
@@ -121,7 +121,7 @@
                         </div>
                         
                         <div class="order">
-                                <label for="tracing-q">Quantity desired: </label>
+                                <label for="tracing-q" id="quantity-1" class="fee">Quantity:</label>
                                 <input type="number" name="tracing-qs" id="tracing-q" min="0" placeholder="0" value="0" size="3" >
                         </div>
                                           
@@ -136,7 +136,7 @@
         
                         <div class="group col3 method">
         
-                            <label>Select value:</label><br>
+                            <label class="options">Select a fee:</label>
                             <select id="eavesdropping" name="eavesdropping">
                                 <option value="0" selected="selected"></option>
                                 <option value="80">80€ (1 hour)</option>
@@ -146,7 +146,7 @@
                         </div>
                         
                         <div class="order">
-                                <label for="eavesdropping-q">Quantity desired: </label>
+                                <label for="eavesdropping-q" id="quantity-1" class="fee">Quantity: </label>
                                 <input type="number" name="eavesdropping-q" id="eavesdropping-q" min="0" placeholder="0" value="0" size="3" >
                         </div>
                     
@@ -161,12 +161,12 @@
         
                         <div class="group col3 method">
         
-                            <label>150€ (1 hour)</label><br>
+                            <label class="fee">150€ (1 hour)</label>
         
                         </div>
                         
                         <div class="order">
-                                <label for="legal-advice-q">Quantity desired: </label>
+                                <label for="legal-advice-q" class="fee">Hours:</label>
                                 <input type="number" name="legal-advice-q" id="legal-advice-q" min="0" placeholder="0" value="0" size="3" >
                         </div>
             
@@ -181,12 +181,12 @@
         
                         <div class="group col3 method">
         
-                            <label>500€ (1 hour)</label><br>
+                            <label class="fee">500€ (1 hour)</label>
                             
                         </div>
                         
                         <div class="order">
-                                <label for="hacking-q">Quantity desired: </label>
+                                <label for="hacking-q" class="fee">Hours:</label>
                                 <input type="number" name="hacking-q" id="hacking-q" min="0" placeholder="0" value="0" size="3" >
                         </div>
                         
@@ -194,13 +194,13 @@
 
                 </fieldset>
 
-                <div class="row-quote">
-                    <div class="item-btn">
+                <div class="row-quote grid">
+                    <div class="item-btn justify">
                         <button class="btn-about" id="submit" value="Estimate Total" type="submit">Calculate <i class="fas fa-arrow-circle-right"></i></button> 
                     </div>
                 </div>
 
-                <div class="group col2 calc">
+                <div class="group col2 calc quote">
                     <div id="results">
                         
                     </div>
