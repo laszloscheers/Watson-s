@@ -97,7 +97,7 @@ window.getSelection().removeAllRanges();
 
         if(TR != 0){
             totalPriceUntaxed += totalTracing;
-            result_html.innerHTML += 'Total Tracing: ' + tracing.value + '€ * ' + TR + ' = ' + totalTracing + '€ <br>';
+            result_html.innerHTML += 'Total Tracing Job: ' + tracing.value + '€ * ' + TR + ' = ' + totalTracing + '€ <br>';
         }
         if(ED != 0){
             totalPriceUntaxed += totalEavesdropping;
@@ -109,16 +109,20 @@ window.getSelection().removeAllRanges();
         }
         if(HK != 0){
             totalPriceUntaxed += totalHacking;
-            result_html.innerHTML += 'Total Hackers: ' + '500' + '€ * ' + HK + ' = ' + totalHacking + '€ <br>';
+            result_html.innerHTML += 'Total Hacking Solutions: ' + '500' + '€ * ' + HK + ' = ' + totalHacking + '€ <br>';
         }
 
         totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
         totalTaxes= 21*totalPriceUntaxed/100;
         console.log(totalPriceUntaxed);
 
+		
 		result_html.innerHTML += '<br>Your total balance is: <br><br>';
+		result_html.innerHTML += 'Price without Tax: ' + totalPriceUntaxed + '€<br>';
         result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '€<br>';
-        result_html.innerHTML += 'Total: ' + (totalPriceUntaxed + totalTaxes) + '€<br>';
+        result_html.innerHTML += 'Total with Tax: ' + (totalPriceUntaxed + totalTaxes) + '€<br>';
+
+		disableButton();
 		
     }
     
