@@ -5,14 +5,14 @@ body{
   overflow: scroll;
 }
 .background-image{
-    background-image: url("../img/bg-watson.jpg");
+    background-image: url("../img/bg-watson.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 .background-image-about{
-  background-image: url("../img/bg-watson3.jpg");
+  background-image: url("../img/bg-watson3.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
