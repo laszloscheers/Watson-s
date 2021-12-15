@@ -428,7 +428,8 @@ body{
   list-style: none;
   position: relative;
   padding: 0 0 20px 20px;
-  font-family: 'Noto Serif', serif; 
+  font-family: 'Hoefler Text', serif;
+  font-size: 20px;  
   color: #343434;
   text-align: left;
 }
