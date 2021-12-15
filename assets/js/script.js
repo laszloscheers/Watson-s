@@ -60,16 +60,44 @@ function disableButton() {
 
 }
 
-var option1 = document.getElementById("tracing");
-document.addEventListener("change", function() {
-    var quantity1 = document.getElementById("quantity-1");
-    quantity1.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>';
-});
-var option2 = document.getElementById("eavesdropping");
-document.addEventListener("change", function() {
-    var quantity2 = document.getElementById("quantity-2");
-    quantity1.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Hours: </label>';
-});
+//Change quantity dependicg on the option selected
+(function() {
+
+    document.addEventListener('DOMContentLoaded', function(){
+    
+        var option1 = document.getElementById("tracing");
+        var option2 = document.getElementById("eavesdropping");
+
+        option1.addEventListener("change", function() {
+
+            var quantity1 = document.getElementById("quantity-1");
+
+            if(option1.value==500){
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Hours:</label>';
+            } else if(option1.value==2800){
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Weeks:</label>';
+            } else if(option1.value==8400){
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Moths:</label>';
+            } else{
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Quantity:</label>';
+            }
+        });
+
+        option2.addEventListener("change", function() {
+
+            var quantity2 = document.getElementById("quantity-2");
+            if(option2.value==80){
+                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Hours: </label>';
+            } else if(option2.value==300){
+                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Bundle: </label>';
+            } else{
+                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>';
+            }
+        });
+    
+    });
+})();
+
 function estimateTotal(event) {
     event.preventDefault();
 
