@@ -971,7 +971,7 @@ h4 {
     font-size: 18px;
     border-width: 2px;
     border-style: solid;
-    border-radius: 100px
+    border-radius: 100px;
 }
 .btn-about:hover,
 .btn-about:active{
@@ -988,7 +988,22 @@ STYLE FOR CALCULATOR
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction: row;
-	margin:25px 0;
+	margin: 3% 3% 3% 5%;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2% 2% 2% 2%;
+}
+#product-summary h2{
+  margin: 4% 0% 7% 0%;
+  font-weight: bold;
+}
+#product-summary .row-quote{
+  justify-content: space-between;
+}
+
+.state{
+  align-self: center !important;
+  font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
 }
 .row-quote div{
   width: unset !important;
@@ -998,6 +1013,7 @@ STYLE FOR CALCULATOR
 }
 .row-quote .col3{
 	flex: 0 0 33%;
+  display: grid;
 }
 
 h2{
@@ -1136,17 +1152,29 @@ input[type="submit" i]:disabled{
   .item-btn{display: grid;}
   #btn-submit{justify-self: center;}
 }
-
+.justify{
+  justify-content: flex-end;
+}
 #contact-form label, #contact-form input, #contact-form textarea {
-	color: #000;
+	color: #212529;
 	display: block;
   
 }
-
+.fee{
+  align-self: center;
+  justify-self: center;
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+.order{
+  display: grid;
+}
+.options{
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
+}
 #contact-form label {
-	font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))); 
+ 
 	font-weight: bold;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	display: flex;
 	align-items: baseline;
 }
@@ -1168,12 +1196,16 @@ input[type="submit" i]:disabled{
 	border: 2px solid #8a5336;
 	background-color: #f0f0f0;
 	border-radius: 5px;
+  width: 100%;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
 	background-color: #fff;
   border-color: #8a5336;
+}
+.grid{
+  display: grid;
 }
 
 #contact-form.flex-row .item-btn { width: 26% }
