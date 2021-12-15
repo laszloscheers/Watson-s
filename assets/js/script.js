@@ -49,81 +49,130 @@ document.execCommand('copy');
 window.getSelection().removeAllRanges();
 }
 
-//Script for calculator
-(function() {
-    document.addEventListener('DOMContentLoaded', function(){
-    
-        document.getElementById('cart_custom').addEventListener('submit', estimateTotal);
-    });
+
 	
-	/* Function to disable Calculate button after submit */
-	
-	function disableButton() {
-		document.getElementById("submit").disabled = true;
-	}
+/* Function to disable Calculate button after submit */
 
-    function estimateTotal(event) {
-        event.preventDefault();
+function disableButton() {
+    var submit = document.getElementById('submit-div');
+    submit.innerHTML = '<a class="btn-about" id="refresh" onclick="refreshDiv()" href="#quote">Refresh Calculator <i class="fas fa-arrow-circle-right"></i></a>';
+    document.getElementById("print-btn").style.visibility = 'visible';
 
-        var eavesdropping = document.getElementById("eavesdropping");
-        var tracing = document.getElementById("tracing");
-        var TR = parseInt(document.getElementById("tracing-q").value);
-        var ED = parseInt(document.getElementById("eavesdropping-q").value);
-        var LA = parseInt(document.getElementById("legal-advice-q").value,);
-        var HK = parseInt(document.getElementById("hacking-q").value);
-        
-        //console.log(TR);
-        //console.log(ED);
-        //console.log(LA);
-        //console.log(HK);
-        
-        var totalTracing,
-            totalEavesdropping,
-            totalLegal,
-            totalHacking,
-            totalPrice,
-            totalTaxes,
-            totalPriceUntaxed;
+}
 
-        totalTracing = tracing.value * TR;
-        totalEavesdropping = eavesdropping.value * ED;
-        totalLegal = LA * 150;
-        totalHacking= HK * 500;
-        totalPriceUntaxed=0;
-        totalPrice=0;
+var option1 = document.getElementById("tracing");
+document.addEventListener("change", function() {
+    var quantity1 = document.getElementById("quantity-1");
+    quantity1.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>';
+});
+var option2 = document.getElementById("eavesdropping");
+document.addEventListener("change", function() {
+    var quantity2 = document.getElementById("quantity-2");
+    quantity1.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Hours: </label>';
+});
+function estimateTotal(event) {
+    event.preventDefault();
 
-
-        var result_html = document.getElementById('results');
-
-        if(TR != 0){
-            totalPriceUntaxed += totalTracing;
-            result_html.innerHTML += 'Total Tracing Job: ' + tracing.value + '€ * ' + TR + ' = ' + totalTracing + '€ <br>';
-        }
-        if(ED != 0){
-            totalPriceUntaxed += totalEavesdropping;
-            result_html.innerHTML += 'Total Eavesdropping: ' + eavesdropping.value + '€ * ' + ED + ' = ' + totalEavesdropping + '€ <br>';
-        }
-        if(LA != 0){
-            totalPriceUntaxed += totalLegal;
-            result_html.innerHTML += 'Total Legal Advice: ' + '150' + '€ * ' + LA + ' = ' + totalLegal+ '€ <br>';
-        }
-        if(HK != 0){
-            totalPriceUntaxed += totalHacking;
-            result_html.innerHTML += 'Total Hacking Solutions: ' + '500' + '€ * ' + HK + ' = ' + totalHacking + '€ <br>';
-        }
-
-        totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
-        totalTaxes= 21*totalPriceUntaxed/100;
-        console.log(totalPriceUntaxed);
-
-		
-		result_html.innerHTML += '<br>Your total balance is: <br><br>';
-		result_html.innerHTML += 'Price without Tax: ' + totalPriceUntaxed + '€<br>';
-        result_html.innerHTML += 'Taxes 21%: ' + totalTaxes + '€<br>';
-        result_html.innerHTML += 'Total with Tax: ' + (totalPriceUntaxed + totalTaxes) + '€<br>';
-
-		disableButton();
-		
+    var eavesdropping = document.getElementById("eavesdropping");
+    var tracing = document.getElementById("tracing");
+    var TR = parseInt(document.getElementById("tracing-q").value);
+    var ED = parseInt(document.getElementById("eavesdropping-q").value);
+    var LA = parseInt(document.getElementById("legal-advice-q").value,);
+    var HK = parseInt(document.getElementById("hacking-q").value);
+    if(TR==0 && ED==0 && LA==0 && HK==0){
+        alert('Please, fill at least one field of the calculator');
+        return;
     }
+    //console.log(TR);
+    //console.log(ED);
+    //console.log(LA);
+    //console.log(HK);
     
-    })();
+    var totalTracing,
+        totalEavesdropping,
+        totalLegal,
+        totalHacking,
+        totalPrice,
+        totalTaxes,
+        totalPriceUntaxed;
+
+    totalTracing = tracing.value * TR;
+    totalEavesdropping = eavesdropping.value * ED;
+    totalLegal = LA * 150;
+    totalHacking= HK * 500;
+    totalPriceUntaxed=0;
+    totalPrice=0;
+
+
+    var result_html = document.getElementById('results');
+    result_html.innerHTML += '<div class="results"><h1>Your Quote </h1></div><br>';
+    result_html.innerHTML += '<div class="result-title">Your services: </div><br><br>';
+
+    if(TR != 0){
+        totalPriceUntaxed += totalTracing;
+        result_html.innerHTML += '<div class="result-content">Tracing Job: &nbsp&nbsp' + tracing.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + TR + ' &nbsp&nbsphours/&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalTracing + '</div><br>';
+    }
+    if(ED != 0){
+        totalPriceUntaxed += totalEavesdropping;
+        result_html.innerHTML += '<div class="result-content">Eavesdropping: &nbsp&nbsp' + eavesdropping.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + ED + ' &nbsp&nbsphours/&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalEavesdropping + '</div><br>';
+    }
+    if(LA != 0){
+        totalPriceUntaxed += totalLegal;
+        result_html.innerHTML += '<div class="result-content">Legal Advice: &nbsp&nbsp' + '150' + '€ &nbsp&nbsp*&nbsp&nbsp ' + LA + ' &nbsp&nbsphours&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalLegal+ '</div><br>';
+    }
+    if(HK != 0){
+        totalPriceUntaxed += totalHacking;
+        result_html.innerHTML += '<div class="result-content">Hacking Solutions: &nbsp&nbsp' + '500' + '€ &nbsp&nbsp*&nbsp&nbsp ' + HK + ' &nbsp&nbsphours&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalHacking + '</div><br>';
+    }
+
+    totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
+    totalTaxes= 21*totalPriceUntaxed/100;
+    //console.log(totalPriceUntaxed);
+
+    result_html.innerHTML += '<div class="result-result">Price without Taxes = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalPriceUntaxed + '</div><br>';
+    result_html.innerHTML += '<div class="result-title">Your total balance: </div><br><br>';
+    result_html.innerHTML += '<div class="result-content">Taxes 21% = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalTaxes + '</div><br>';
+    result_html.innerHTML += '<div class="result-result">Total + Taxes = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + (totalPriceUntaxed + totalTaxes) + '</div><br>';
+    result_html.scrollIntoView();
+
+    disableButton();
+
+}
+
+//script for pint quote
+function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+    var tracing = document.getElementById("tracing").selectedIndex;
+    var eavesdropping = document.getElementById("eavesdropping").selectedIndex;
+    var tracingQ = document.getElementById("tracing-q").value;
+    var eavesdroppingQ = document.getElementById("eavesdropping-q").value;
+    var legalQ =document.getElementById("legal-advice-q").value;
+    var hackingQ = document.getElementById("hacking-q").value;
+
+    document.body.innerHTML = '<div class="container-contact-form">'+printContents+'</div>';
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+    document.getElementById("tracing").selectedIndex = tracing;
+    document.getElementById("eavesdropping").selectedIndex = eavesdropping;
+    document.getElementById("tracing-q").value = tracingQ;
+    document.getElementById("eavesdropping-q").value = eavesdroppingQ;
+    document.getElementById("legal-advice-q").value = legalQ;
+    document.getElementById("hacking-q").value = hackingQ;
+}
+function refreshDiv(){
+var submit = document.getElementById('submit-div');
+var result = document.getElementById('results');
+
+result.innerHTML = '';
+submit.innerHTML = '<button class="btn-about" id="submit" value="Estimate Total" type="submit" onclick="estimateTotal(event)">Calculate <i class="fas fa-arrow-circle-right"></i></button>';
+document.getElementById("print-btn").style.visibility = 'hidden';
+document.getElementById("tracing").selectedIndex = 0;
+document.getElementById("eavesdropping").selectedIndex = 0;
+document.getElementById("tracing-q").value = 0;
+document.getElementById("eavesdropping-q").value = 0;
+document.getElementById("legal-advice-q").value = 0;
+document.getElementById("hacking-q").value = 0;
+}

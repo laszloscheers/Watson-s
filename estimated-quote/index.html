@@ -82,7 +82,7 @@
 	
 	<!-- Begin container for contact form -->
         
-     <div class="container-contact-form quote" data-aos="zoom-in-down" data-aos-duration="700">
+     <div class="container-contact-form quote" id="quote" data-aos="zoom-in-down" data-aos-duration="700">
         <section class="hero">
 			<div class="container-hero-cv text-center">
 				<h1>Get a Quote</h1>
@@ -148,7 +148,7 @@
                         </div>
                         
                         <div class="order">
-                                <label for="eavesdropping-q" id="quantity-1" class="fee">Quantity: </label>
+                                <label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>
                                 <input type="number" name="eavesdropping-q" id="eavesdropping-q" min="0" placeholder="0" value="0" size="3" >
                         </div>
                     
@@ -158,7 +158,7 @@
                     
                     <div class="row-quote">
                         <div class="group col3 state">
-                            <label for="state">Solicitors and Lawyers:</label>
+                            <label for="state">Solicitors & Lawyers:</label>
                         </div>
         
                         <div class="group col3 method">
@@ -197,17 +197,21 @@
                 </fieldset>
 
                 <div class="row-quote grid">
+                    <div id="submit-div" class="item-btn justify">
+                        <button class="btn-about" id="submit" value="Estimate Total" type="submit" onclick="estimateTotal(event)">Calculate <i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="group col2 calc" id="print">
+                    <div id="results" class="results">
+
+                    </div>
+                </div>
+                <div class="row-quote grid">
                     <div class="item-btn justify">
-                        <button class="btn-about" id="submit" value="Estimate Total" type="submit">Calculate <i class="fas fa-arrow-circle-right"></i></button> 
+                        <a class="btn-about" id="print-btn" type="button" onclick="printDiv('print')" style="visibility: hidden" href="#results">Print Quote <i class="fas fa-arrow-circle-right"></i></a> 
                     </div>
                 </div>
-
-                <div class="group col2 calc quote">
-                    <div id="results">
-                        
-                    </div>
-                </div>
-
             </form>
             </div>
             
@@ -239,7 +243,7 @@
 		</div>
 		<div class="item-3">
 			<h4>Watson's Detective Agency</h4>
-			<p>Something troubling you? Trust the world’s second leading detective to sort it out</p>
+			<p>Something troubling you? Trust the world's second leading detective to sort it out</p>
 		</div>
 		<div class="item-3">
 			<h4>Contact</h4>

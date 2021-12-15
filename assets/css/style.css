@@ -236,7 +236,7 @@ body{
 
 .hero h1{
   font-size: calc(105px + (80 - 65) * ((100vw - 320px) / (1600 - 320)));
-  margin-top: 25px;
+
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
 }
@@ -967,15 +967,16 @@ h4 {
     background-color: #8a5336;
     color: #fff;
 	  font-weight: bold;
-    padding: 18px 28px;
+    padding: 17px 30px;
     font-size: 18px;
     border-width: 2px;
     border-style: solid;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 .btn-about:hover,
 .btn-about:active{
-  background-color: #212529;
+  background-color: #343434;
+  border-color: #fff;
   color: #fff;
   transform:scale(1.1);
   transition: 1s;
@@ -988,13 +989,13 @@ STYLE FOR CALCULATOR
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction: row;
-	margin: 3% 3% 3% 5%;
+	margin: 3% 0% 3% 0%;
   border-style: solid;
   border-radius: 5px;
-  padding: 2% 2% 2% 2%;
+  padding: 3% 3% 3% 3%;
 }
 #product-summary h2{
-  margin: 4% 0% 7% 0%;
+  margin: 1% 0% 4.5% 0%;
   font-weight: bold;
 }
 #product-summary .row-quote{
@@ -1005,6 +1006,10 @@ STYLE FOR CALCULATOR
   align-self: center !important;
   font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
 }
+.method{
+  margin-right: 20%;
+}
+
 .row-quote div{
   width: unset !important;
 }
@@ -1057,21 +1062,22 @@ input[type="submit" i]:disabled{
 	background:#F2EFEC;
 }
 #summary, #product-summary{
-	border-top:1px solid #F2EFEC;
-	border-bottom:1px solid #F2EFEC;
+
+
 	border-left:none;
 	border-right:none;
 	padding:1%;
 }
 .calc{
 	border-top:5px dotted #F2EFEC;
-	border-bottom:5px dotted #F2EFEC;
 	margin-top:25px;
 }
 .quote{
-  margin: 3% 15% 2% 15% !important;
+  margin: 0% 15% 2% 15% !important;
   text-align: left !important;
+  transform: scale(0.9);
 }
+
 /* =============== BEGIN CONTACT FORM CSS ============= */
 /* == Contact form container == */
 /* All screens */
@@ -1163,13 +1169,17 @@ input[type="submit" i]:disabled{
 .fee{
   align-self: center;
   justify-self: center;
+  margin-right: 10%;
   font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
 }
 .order{
   display: grid;
+  margin-right: 1%;
 }
 .options{
   font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
+  justify-self: center;
+  margin-right: 9%;
 }
 #contact-form label {
  
@@ -1193,7 +1203,7 @@ input[type="submit" i]:disabled{
 
 #contact-form input, #contact-form textarea {
 	padding: 10px 12px;
-	border: 2px solid #8a5336;
+	border: 3px solid #8a5336;
 	background-color: #f0f0f0;
 	border-radius: 5px;
   width: 100%;
@@ -1206,6 +1216,15 @@ input[type="submit" i]:disabled{
 }
 .grid{
   display: grid;
+  border-style: none;
+  margin: 1% 2% 4% 0%;
+  padding: 0% 0% 0% 0%;
+}
+select {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: #8a5336;
 }
 
 #contact-form.flex-row .item-btn { width: 26% }
@@ -1215,20 +1234,21 @@ input[type="submit" i]:disabled{
     background-color: #8a5336;
     color: #fff;
 	  font-weight: bold;
-    padding: 18px 28px;
+    padding: 15px 28px;
     font-size: 18px;
     border-width: 2px;
     border-style: solid;
-    border-radius: 100px
+    border-radius: 10px
 }
 
 
 #contact-form #btn-submit:hover, 
 #contact-form #btn-submit:active { 
-    background-color: #212529;
+    background-color: #343434;
     color: #fff;
     transform:scale(1.1);
     transition: 1s;
+    border-color: #fff;
 }
 
 #contact-form #btn-submit i.fas {
@@ -1332,14 +1352,48 @@ input[type="submit" i]:disabled{
 
 /* == Results Get a Quote == */
 
-#results{
+.results{
 	font-family: 'Inter', sans-serif;
 	font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
     font-weight: bold;
     margin-bottom: 8px;
-    display: flex;
-    align-items: baseline;
+   text-align: right;
+   display: grid;
 	
+}
+.results h1{
+  font-size: calc(105px + (110 - 105) * ((100vw - 320px) / (1600 - 320))) !important;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  align-self: center;
+  margin: 4% 0% 5% 0%;
+}
+.result-title{
+  align-self: center;
+  text-align: center;
+  margin: 0% 0% 5% 0%;
+  font-family: 'Noto Serif', serif;
+  font-size: calc(35px + (40 - 35) * ((100vw - 320px) / (1600 - 320)));
+}
+.align{
+  align-self: left;
+}
+.result-content{
+  font-family: 'Inter', sans-serif;
+	font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: bold;
+   text-align: right;
+   display: grid;
+}
+.result-result{
+  border-top: 5px dotted #F2EFEC;
+  font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
+  margin: 1% 0% 5% 50%;
+  padding-top: 2%;
+  text-align: right;
+  display: grid;
+  font-weight: bold;
 }
 
 /* == End Results Get a Quote == */
