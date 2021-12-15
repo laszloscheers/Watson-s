@@ -1,7 +1,7 @@
 body{
   background-color:#e4e0d7 !important;
 	scroll-behavior: smooth;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   overflow: scroll;
 }
 .background-image{
@@ -152,7 +152,7 @@ body{
 }
 
 .about p{
-  font-family: 'Noto Serif', serif !important;
+  font-family: 'Hoefler Text', serif !important;
   font-size: calc(4px + (19 - 4) * ((100vw - 320px) / (1600 - 320))) !important;
   text-align: left;
   padding: 0% 5% 0% 5% !important;
@@ -330,7 +330,7 @@ body{
   text-align: justify-content;
   color: black;
   font-size: 20px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   border-radius: 5px;
   border: 2px solid black;
   overflow: hidden;
@@ -522,7 +522,7 @@ li.cross::after {
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
 }
 
 .pricing-table .item {
@@ -879,7 +879,7 @@ li.cross::after {
 .container-one-column li {
    line-height: 1.5; margin-bottom:14px;
    font-size: calc(19px + (21 - 19) * ((100vw - 320px)/(1600 - 320)));
-   font-family: 'Noto Serif', serif;
+   font-family: 'Hoefler Text', serif;
 }
 
 .container-one-column ul { margin-left: 17px; text-align: justify !important; }
@@ -1136,7 +1136,7 @@ input[type="submit" i]:disabled{
 	line-height: 1.5;
 	margin-bottom: 4%;
 	font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   font-weight: bold;
 }
 
@@ -1374,7 +1374,7 @@ select {
   align-self: center;
   text-align: center;
   margin: 0% 0% 5% 0%;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   font-size: calc(35px + (40 - 35) * ((100vw - 320px) / (1600 - 320)));
 }
 .align{
