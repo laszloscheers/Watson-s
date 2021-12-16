@@ -50,9 +50,9 @@ window.getSelection().removeAllRanges();
 }
 
 
-	
-/* Function to disable Calculate button after submit */
+/*------ Script fore calcuator on quote page -----*/
 
+/* Function to disable Calculate button after submit */
 function disableButton() {
     var submit = document.getElementById('submit-div');
     submit.innerHTML = '<a class="btn-about" id="refresh" onclick="refreshDiv()" href="#quote">Refresh Calculator <i class="fas fa-arrow-circle-right"></i></a>';
@@ -60,7 +60,7 @@ function disableButton() {
 
 }
 
-//Change quantity dependicg on the option selected
+//Change quantity depending on the option selected
 (function() {
 
     document.addEventListener('DOMContentLoaded', function(){
@@ -181,7 +181,7 @@ function estimateTotal(event) {
 
 }
 
-//script for pint quote
+//script for print quote
 function printDiv(divName) {
     var printContents = document.getElementById(divName).innerHTML;
     var originalContents = document.body.innerHTML;
@@ -204,6 +204,8 @@ function printDiv(divName) {
     document.getElementById("legal-advice-q").value = legalQ;
     document.getElementById("hacking-q").value = hackingQ;
 }
+
+//script to refresh the calculator
 function refreshDiv(){
 var submit = document.getElementById('submit-div');
 var result = document.getElementById('results');
@@ -217,5 +219,6 @@ document.getElementById("tracing-q").value = 0;
 document.getElementById("eavesdropping-q").value = 0;
 document.getElementById("legal-advice-q").value = 0;
 document.getElementById("hacking-q").value = 0;
-location.reload();
+document.getElementById("quantity-1") = '<label for="tracing-q" id="quantity-1" class="fee">Quantity:</label>';
+document.getElementById("quantity-2") = '<label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>';
 }
