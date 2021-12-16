@@ -2,7 +2,6 @@ body{
   background-color:#e4e0d7 !important;
 	scroll-behavior: smooth;
   font-family: 'Hoefler Text', serif;
-  font-size
   overflow: scroll;
 }
 .background-image{
@@ -21,6 +20,7 @@ body{
 }
 .navbar-dark{
   background-color: #8a5336 !important;
+  font-size: 18px;
 }
 .CTA{
   margin: 0.5% 0 0 14%;
@@ -31,15 +31,15 @@ body{
   font-size: 18px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 60px;
+  border-radius: 7px;
   max-width: 200px;
   font-family: 'Trebuchet MS', sans-serif;
 }
 .CTA-home{
   margin: 0% 0 0 2% !important;
-  background-color: #fff;
+  background-color: #f8f7f3;
   color: #8a5336;
-  border-color:#FFFFFF;
+  border-color:#f8f7f3;
   max-width: none;
   font-size: 16px;
   font-weight: bold;
@@ -47,6 +47,7 @@ body{
   border-width: 2px;
   border-style: solid;
   border-radius: 7px;
+  font-size: 19px;
 }
 @media all and (max-width: 1199px) {
   .CTA-home {justify-self: center; width: 300px; margin: 3% 0% 0% 0% !important;}
@@ -78,9 +79,9 @@ body{
 
 .CTA:hover,
 .CTA:active { 
-    background-color: #e4e0d7;
+    background-color: #f8f7f3;
     color: #202124 !important;
-    border-color:#202124;
+    border-color:#f8f7f3;
     transform:scale(1.1);
     transition: 0.3s;
     text-decoration: none;
@@ -978,10 +979,10 @@ h4 {
 .btn-about:hover,
 .btn-about:active{
   background-color: #343434;
-  border-color: #fff;
+  border-color: #343434;
   color: #fff;
   transform:scale(1.1);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /******************************************************************************
@@ -1289,9 +1290,10 @@ select {
 #contact-form #btn-submit:hover, 
 #contact-form #btn-submit:active { 
     background-color: #343434;
+    border-color: #343434 !important;
     color: #fff;
     transform:scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
     border-color: #fff;
 }
 
@@ -1312,7 +1314,7 @@ select {
 
 /* Desktop footer - inside padding  */
 @media all and (min-width:768px) {
-	.container-footer { padding: 3% 8% 3% 8% }
+	.container-footer { padding: 3% 4% 3% 7% }
 }
 
 /* Mobiles footer - inside padding */
