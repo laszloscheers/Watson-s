@@ -995,6 +995,47 @@ STYLE FOR CALCULATOR
   border-radius: 5px;
   padding: 3% 3% 3% 3%;
 }
+
+@media all and (max-width: 1442px) { 
+	.row-quote{flex-direction: column;}
+  .options{margin-right: 0% !important; padding-bottom: 2%;}
+  .method{margin: 0% 0% 0% 0% !important;}
+  #tracing{margin: 0% 25% 15% 25% !important;padding: 3% 1% 3% 1% !important;}
+  #eavesdropping{margin: 0% 25% 15% 25% !important;padding: 3% 1% 3% 1% !important;}
+  #quantity-1{margin-right: 0% !important; padding-bottom: 1%;}
+  #quantity-2{margin-right: 0% !important; padding: 2% 0% 1% 0%;}
+  .fee{margin-right: 0% !important; padding: 0% 0% 1% 0%;}
+  #tracing-q{max-width: 15% !important;justify-self: center;}
+  #eavesdropping-q{max-width: 15% !important;justify-self: center;}
+  #legal-advice-q{max-width: 15% !important;justify-self: center;}
+  #hacking-q{max-width: 15% !important;justify-self: center;}
+  .fee{margin: 0% 0% 0% 0% !important;}
+  .state{padding: 0% 0% 2% 0% !important;}
+  .justify{justify-self: center !important;}
+  .result-content{font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-result{font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1600 - 320))) !important; margin: 1% 0% 5% 25% !important;}
+}
+@media all and (max-width: 906px){
+  .quote{padding: 0% 0% 0% 0% !important;}
+  #tracing-q{max-width: 25% !important;}
+  #eavesdropping-q{max-width: 25% !important;}
+  #legal-advice-q{max-width: 25% !important;}
+  #hacking-q{max-width: 25% !important;}
+  #eavesdropping{margin: 0% 25% 0% 25% !important;}
+  .result-title{font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-content{font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-result{font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;}
+}
+@media all and (max-width: 576px){
+  .result-title{margin: 10% 0% 20% 0% !important;}
+  #tracing-q{max-width: 35% !important;}
+  #eavesdropping-q{max-width: 35% !important;}
+  #legal-advice-q{max-width: 35% !important;}
+  #hacking-q{max-width: 35% !important;}
+  .result-content{font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-result{font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .btn-about{margin: 7% 0% 7% 0%;}
+}
 #product-summary h2{
   margin: 1% 0% 4.5% 0%;
   font-weight: bold;
@@ -1161,6 +1202,7 @@ input[type="submit" i]:disabled{
 }
 .justify{
   justify-content: flex-end;
+  align-self: baseline;
 }
 #contact-form label, #contact-form input, #contact-form textarea {
 	color: #212529;
