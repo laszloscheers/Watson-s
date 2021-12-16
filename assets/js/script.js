@@ -73,11 +73,11 @@ function disableButton() {
             var quantity1 = document.getElementById("quantity-1");
 
             if(option1.value==500){
-                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Hours:</label>';
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Day/s:</label>';
             } else if(option1.value==2800){
-                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Weeks:</label>';
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Week/s:</label>';
             } else if(option1.value==8400){
-                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Moths:</label>';
+                quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Moth/s:</label>';
             } else{
                 quantity1.innerHTML = '<label for="tracing-q" id="quantity-1" class="fee">Quantity:</label>';
             }
@@ -87,9 +87,9 @@ function disableButton() {
 
             var quantity2 = document.getElementById("quantity-2");
             if(option2.value==80){
-                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Hours: </label>';
+                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Hour/s: </label>';
             } else if(option2.value==300){
-                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Bundle: </label>';
+                quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Bundle/s: </label>';
             } else{
                 quantity2.innerHTML = '<label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>';
             }
@@ -137,20 +137,34 @@ function estimateTotal(event) {
     result_html.innerHTML += '<div class="result-title">Your services: </div><br><br>';
 
     if(TR != 0){
+        var fee1;
+        if(tracing.value==500){
+            fee1 = 'hour/s';
+        } else if(tracing.value==2800){
+            fee1 = 'week/s';
+        } else if(tracing.value==8400){
+            fee1 = 'moth/s';
+        }
         totalPriceUntaxed += totalTracing;
-        result_html.innerHTML += '<div class="result-content">Tracing Job: &nbsp&nbsp' + tracing.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + TR + ' &nbsp&nbsphours/&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalTracing + '</div><br>';
+        result_html.innerHTML += '<div class="result-content">Tracing Job: &nbsp&nbsp' + tracing.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + TR + ' &nbsp&nbsp'+ fee1 +'&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalTracing + '</div><br>';
     }
     if(ED != 0){
+        var fee2;
+        if(eavesdropping.value==80){
+            fee2 = 'hour/s';
+        } else if(eavesdropping.value==300){
+            fee2 = 'bundle/s';
+        }
         totalPriceUntaxed += totalEavesdropping;
-        result_html.innerHTML += '<div class="result-content">Eavesdropping: &nbsp&nbsp' + eavesdropping.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + ED + ' &nbsp&nbsphours/&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalEavesdropping + '</div><br>';
+        result_html.innerHTML += '<div class="result-content">Eavesdropping: &nbsp&nbsp' + eavesdropping.value + '€ &nbsp&nbsp*&nbsp&nbsp ' + ED + ' &nbsp&nbsp' + fee2 + '&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalEavesdropping + '</div><br>';
     }
     if(LA != 0){
         totalPriceUntaxed += totalLegal;
-        result_html.innerHTML += '<div class="result-content">Legal Advice: &nbsp&nbsp' + '150' + '€ &nbsp&nbsp*&nbsp&nbsp ' + LA + ' &nbsp&nbsphours&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalLegal+ '</div><br>';
+        result_html.innerHTML += '<div class="result-content">Legal Advice: &nbsp&nbsp' + '150' + '€ &nbsp&nbsp*&nbsp&nbsp ' + LA + ' &nbsp&nbsphour/s&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalLegal+ '</div><br>';
     }
     if(HK != 0){
         totalPriceUntaxed += totalHacking;
-        result_html.innerHTML += '<div class="result-content">Hacking Solutions: &nbsp&nbsp' + '500' + '€ &nbsp&nbsp*&nbsp&nbsp ' + HK + ' &nbsp&nbsphours&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalHacking + '</div><br>';
+        result_html.innerHTML += '<div class="result-content">Hacking Solutions: &nbsp&nbsp' + '500' + '€ &nbsp&nbsp*&nbsp&nbsp ' + HK + ' &nbsp&nbsphour/s&nbsp&nbsp =&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp€' + totalHacking + '</div><br>';
     }
 
     totalPrice=totalPriceUntaxed+(21*totalPriceUntaxed/100);
@@ -203,4 +217,5 @@ document.getElementById("tracing-q").value = 0;
 document.getElementById("eavesdropping-q").value = 0;
 document.getElementById("legal-advice-q").value = 0;
 document.getElementById("hacking-q").value = 0;
+location.reload();
 }
