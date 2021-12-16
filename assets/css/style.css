@@ -1,7 +1,8 @@
 body{
   background-color:#e4e0d7 !important;
 	scroll-behavior: smooth;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
+  font-size
   overflow: scroll;
 }
 .background-image{
@@ -32,7 +33,7 @@ body{
   border-style: solid;
   border-radius: 60px;
   max-width: 200px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 .CTA-home{
   margin: 0% 0 0 2% !important;
@@ -93,7 +94,7 @@ body{
   border-style: solid;
   border-radius: 7px;
   max-width: 300px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 .CTA-services:hover,
 .CTA-services:active { 
@@ -117,7 +118,7 @@ body{
   border-style: solid;
   border-radius: 5px;
   margin: 7% 0% 20px 17%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 .CTA-contact:hover,
 .CTA-contact:active { 
@@ -152,7 +153,7 @@ body{
 }
 
 .about p{
-  font-family: 'Noto Serif', serif !important;
+  font-family: 'Hoefler Text', serif !important;
   font-size: calc(4px + (19 - 4) * ((100vw - 320px) / (1600 - 320))) !important;
   text-align: left;
   padding: 0% 5% 0% 5% !important;
@@ -168,7 +169,7 @@ body{
 }
 
 .about h3{
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Trebuchet MS', sans-serif !important;
   font-size: calc(32px + (47 - 32) * ((100vw - 320px) / (1600 - 320))) !important;
   padding: 0% 6% 0% 6% !important;
   margin: 3% 0% 7% 0%!important;
@@ -182,7 +183,7 @@ body{
   margin: 3% 0% 7% 0%;
   line-height: normal;
   font-weight: bold;
-  font-family: 'Noto Serif', serif!important;
+  font-family: 'Hoefler Text', serif!important;
 }
 
 .hero-fees h1{
@@ -206,7 +207,7 @@ body{
 .services p{
   background-color: #e4e0d7;
   border-radius: 30px !important;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   margin: 3% 0% 2% 0% !important;
   line-height: normal;
   font-weight: bold;
@@ -227,7 +228,7 @@ body{
 .fees p{
   background-color: #e4e0d7;
   border-radius: 30px !important;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   margin: 3% 0% 2% 0% !important;
   line-height: normal;
   font-weight: bold;
@@ -330,7 +331,7 @@ body{
   text-align: justify-content;
   color: black;
   font-size: 20px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   border-radius: 5px;
   border: 2px solid black;
   overflow: hidden;
@@ -402,7 +403,7 @@ body{
   color: #343a40;
   font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1600 - 320)));
   line-height: 1.3;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   text-align: center;
 }
 
@@ -412,7 +413,7 @@ body{
 	font-weight: bold;
 	position: relative;
 	margin: 5px 0 30px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 
 }
 
@@ -515,14 +516,14 @@ li.cross::after {
   opacity: 0.7; 
   font-size: 20px;
   line-height: 1.5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .pricing-table .heading {
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
 }
 
 .pricing-table .item {
@@ -588,7 +589,7 @@ li.cross::after {
   text-align: center;
   font-size: 18px;
   padding: 7px; 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .pricing-table .price h4 {
@@ -703,7 +704,7 @@ li.cross::after {
 	margin-bottom: 4%;
   margin-left: 18%;
 	font-size: calc(5px + (20 - 5) * ((100vw - 320px) / (1600 - 320))); 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .container-flexbox.container-header-section-two-columns .item-2 img {
@@ -746,7 +747,7 @@ li.cross::after {
   margin-bottom:20px;
   margin-left: 14%;
   font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .container-flexbox .item-2 h3,
@@ -842,7 +843,7 @@ li.cross::after {
 
 /* Desktop */
 @media all and (min-width:768px) {
-  .container-one-column { padding: 4% 10% 5% 10%; font-family: 'Inter', sans-serif;}
+  .container-one-column { padding: 4% 10% 5% 10%; font-family: 'Trebuchet MS', sans-serif;}
 }
 
 /* Mobiles */
@@ -850,7 +851,7 @@ li.cross::after {
    .container-one-column { 
        padding: 7% 7% 10% 7%;
        text-align: center;
-       font-family: 'Inter', sans-serif;
+       font-family: 'Trebuchet MS', sans-serif;
   }
 }
 
@@ -879,7 +880,7 @@ li.cross::after {
 .container-one-column li {
    line-height: 1.5; margin-bottom:14px;
    font-size: calc(19px + (21 - 19) * ((100vw - 320px)/(1600 - 320)));
-   font-family: 'Noto Serif', serif;
+   font-family: 'Hoefler Text', serif;
 }
 
 .container-one-column ul { margin-left: 17px; text-align: justify !important; }
@@ -911,7 +912,7 @@ li.cross::after {
   word-wrap: break-word;
   background-color: #e4e0d7;
   border-style: hidden;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .card p{
@@ -1127,7 +1128,7 @@ input[type="submit" i]:disabled{
 	text-align: center;  
   border-style: solid;
   border-radius: 5px;
-  font-family: 'Inter', sans-serif; 
+  font-family: 'Trebuchet MS', sans-serif; 
   background-color: #e4e0d7;
 }
 
@@ -1165,7 +1166,7 @@ input[type="submit" i]:disabled{
 	color: #343434;
 	line-height: 1.2;
 	font-size: calc(25px + (60 - 25) * ((100vw - 320px) / (1600 - 320))); 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   margin-bottom: 5%;
 }
 .color{color: #000;}
@@ -1177,7 +1178,7 @@ input[type="submit" i]:disabled{
 	line-height: 1.5;
 	margin-bottom: 4%;
 	font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   font-weight: bold;
 }
 
@@ -1396,7 +1397,7 @@ select {
 /* == Results Get a Quote == */
 
 .results{
-	font-family: 'Inter', sans-serif;
+	font-family: 'Trebuchet MS', sans-serif;
 	font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
     font-weight: bold;
     margin-bottom: 8px;
@@ -1416,14 +1417,14 @@ select {
   align-self: center;
   text-align: center;
   margin: 0% 0% 5% 0%;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Hoefler Text', serif;
   font-size: calc(35px + (40 - 35) * ((100vw - 320px) / (1600 - 320)));
 }
 .align{
   align-self: left;
 }
 .result-content{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 	font-size: calc(22px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
     font-weight: bold;
    text-align: right;
