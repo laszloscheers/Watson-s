@@ -2,6 +2,7 @@ body{
   background-color:#e4e0d7 !important;
 	scroll-behavior: smooth;
   font-family: 'Hoefler Text', serif;
+  font-size: 20px;
   overflow: scroll;
 }
 .background-image{
