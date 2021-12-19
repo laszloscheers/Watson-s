@@ -368,7 +368,7 @@ body{
   .aos-services ul{margin: 0% !important;}
 }
 @media all and (max-width: 454px) {
-  .aos-init-img{ transform: scale(0.6) !important;;}
+  .aos-init-img{ transform: scale(0.5) !important;;}
 }
 .aos-init-img{
   margin-left: auto;
@@ -502,6 +502,16 @@ li.cross::after {
   margin-bottom: 40px;
   text-align: center; 
   color: white;
+}
+@media all and (max-width: 714px) {
+  .pricing-table .block-heading h2 {font-size: 50px !important;}
+  .container{display:grid;}
+  .row{transform: scale(0.7); justify-self: center !important;}
+  .pricing-table .block-heading{padding-top: 0 !important;}
+  .pricing-table .item{margin-top: 0 !important;}
+}
+@media all and (max-width: 398px) {
+  .row{transform: scale(0.65);}
 }
 
 .pricing-table .block-heading h2 {
