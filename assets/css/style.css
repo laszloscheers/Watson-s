@@ -57,9 +57,10 @@ body{
   
 }
 @media all and (max-width: 513px) {
-  .container-flexbox.container-header-section-two-columns .item-2 h1{font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1600 - 320)));}
+  .container-flexbox.container-header-section-two-columns .item-2 h1{font-size: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320))) !important;}
   .container-flexbox.container-header-section-two-columns .item-2 img{transform: scale(0.8);}
-  .container-flexbox.container-header-section-two-columns .item-2 p{font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .container-flexbox.container-header-section-two-columns .item-2 p{font-size: calc(17px + (32 - 17) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .reduce{font-size: 50px !important;}
   
 }
 
@@ -122,6 +123,10 @@ body{
   margin: 7% 0% 20px 17%;
   font-family: 'Trebuchet MS', sans-serif;
 }
+@media all and (max-width: 485px) {
+  .CTA-anchor a{font-size: 12px;}
+  
+}
 .CTA-contact:hover,
 .CTA-contact:active { 
     background-color: #212529;
@@ -168,6 +173,7 @@ body{
   .about p {font-size: calc(17px + (33 - 17) * ((100vw - 320px) / (1600 - 320))) !important;}
   .about h3{font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320))) !important;}
   .hero-about h1{font-size: calc(50px + (65 - 50) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .about{margin: 1% 1% 1% 1% !important;}
 }
 
 .about h3{
@@ -1036,8 +1042,8 @@ STYLE FOR CALCULATOR
   #hacking-q{max-width: 25% !important;}
   #eavesdropping{margin: 0% 25% 0% 25% !important;}
   .result-title{font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1600 - 320))) !important;}
-  .result-content{font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;}
-  .result-result{font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-content{font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important;}
+  .result-result{font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important;}
 }
 @media all and (max-width: 576px){
   .result-title{margin: 10% 0% 20% 0% !important;}
@@ -1045,8 +1051,7 @@ STYLE FOR CALCULATOR
   #eavesdropping-q{max-width: 35% !important;}
   #legal-advice-q{max-width: 35% !important;}
   #hacking-q{max-width: 35% !important;}
-  .result-content{font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
-  .result-result{font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320))) !important;}
+
   .btn-about{margin: 7% 0% 7% 0%;}
 }
 #product-summary h2{
@@ -1128,7 +1133,7 @@ input[type="submit" i]:disabled{
 	margin-top:25px;
 }
 .quote{
-  margin: 0% 15% 2% 15% !important;
+  margin: 0% 1% 2% 1% !important;
   text-align: left !important;
   transform: scale(0.9);
 }
