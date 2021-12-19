@@ -152,7 +152,7 @@ body{
 }
 
 .hero-about{
-  padding: 1.5% 0% 3.5% 0% !important;
+  padding: 1.5% 0% 1.5% 0% !important;
   color: #343434;
 }
 .hero-about h1{
@@ -508,6 +508,9 @@ li.cross::after {
   margin-bottom: 40px;
   text-align: center; 
   color: white;
+}
+.container{
+  max-width: 85%;
 }
 @media all and (max-width: 714px) {
   .pricing-table .block-heading h2 {font-size: 50px !important;}
@@ -1012,7 +1015,7 @@ STYLE FOR CALCULATOR
 	margin: 3% 0% 3% 0%;
   border-style: solid;
   border-radius: 5px;
-  padding: 3% 3% 3% 3%;
+  padding: 1.5% 3% 1.5% 3%;
 }
 
 @media all and (max-width: 1442px) { 
